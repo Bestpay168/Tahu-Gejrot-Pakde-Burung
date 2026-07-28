@@ -1,0 +1,29 @@
+/* ==========================================
+   MAP ANIMATION
+========================================== */
+
+.map-box{
+
+    opacity:0;
+    transform:translateY(40px);
+    animation:mapFade .8s ease forwards;
+
+}
+
+@keyframes mapFade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
