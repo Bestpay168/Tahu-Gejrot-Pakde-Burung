@@ -1,103 +1,11 @@
-
 /* =========================================
    TAHU GEJROT PAKDE BURUNG
    script.js
-========================================== *
-/* ==========================================
-   SHOPPING CART
 ========================================== */
 
-function updateCart() {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const menuItems = document.querySelectorAll(".menu-item");
-
-    const cart = document.getElementById("cart");
-
-    const subtotalText = document.getElementById("subtotal");
-
-    const ongkirText = document.getElementById("ongkir");
-
-    const totalText = document.getElementById("total");
-
-    const delivery = document.getElementById("deliveryMethod");
-
-    let subtotal = 0;
-
-    let cartHTML = "";
-
-    menuItems.forEach(function(item){
-
-        const nama = item.dataset.name;
-
-        const harga = parseInt(item.dataset.price);
-
-        const qty = parseInt(item.querySelector(".qty").value) || 0;
-
-        if(qty>0){
-
-            const totalItem = harga * qty;
-
-            subtotal += totalItem;
-
-            cartHTML += `
-            <div class="cart-item">
-                <span>${nama} x${qty}</span>
-                <strong>Rp${totalItem.toLocaleString("id-ID")}</strong>
-            </div>
-            `;
-
-        }
-
-    });
-
-    if(cartHTML===""){
-
-        cart.innerHTML="<p>Keranjang masih kosong.</p>";
-
-    }else{
-
-        cart.innerHTML=cartHTML;
-
-    }
-
-    let ongkir=10000;
-
-    if(delivery.value==="pickup"){
-
-        ongkir=0;
-
-    }
-
-    subtotalText.textContent=
-    "Rp"+subtotal.toLocaleString("id-ID");
-
-    ongkirText.textContent=
-    "Rp"+ongkir.toLocaleString("id-ID");
-
-    totalText.textContent=
-    "Rp"+(subtotal+ongkir).toLocaleString("id-ID");
-
-}
-const total =
-document.getElementById("total").textContent;
-    const form = document.getElementById("orderForm");
-
-    if (form) {
-
-        form.addEventListener("submit", function (e) {
-
-            e.preventDefault();
-
-            kirimWhatsApp();
-
-        });
-
-    }
-
-});
-
-
-
+    const menuItems =
 /* ==========================================
    INFORMASI PEMBAYARAN
 ========================================== */
