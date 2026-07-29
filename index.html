@@ -128,50 +128,139 @@ GOOGLE MAPS
 
         <form id="orderForm" class="order-form">
 
+            <!-- Nama -->
             <div class="form-group">
                 <label>Nama Pemesan</label>
-                <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama Anda"
+                    required>
             </div>
 
+            <!-- WhatsApp -->
             <div class="form-group">
                 <label>Nomor WhatsApp</label>
-                <input type="tel" id="wa" placeholder="08xxxxxxxxxx" required>
+                <input
+                    type="tel"
+                    id="wa"
+                    placeholder="08xxxxxxxxxx"
+                    required>
             </div>
 
+            <!-- Alamat -->
             <div class="form-group">
                 <label>Alamat Pengiriman</label>
-                <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+                <textarea
+                    id="alamat"
+                    rows="3"
+                    placeholder="Masukkan alamat lengkap"
+                    required></textarea>
             </div>
 
+            <!-- Menu -->
             <div class="form-group">
                 <label>Menu</label>
-                <select id="menu">
-                    <option>Tahu Gejrot Original</option>
-                    <option>Tahu Gejrot Extra Pedas</option>
-                    <option>Es Teh Manis</option>
+
+                <select
+                    id="menu"
+                    onchange="hitungTotal()"
+                    required>
+
+                    <option value="">-- Pilih Menu --</option>
+
+                    <option value="10000">
+                        Tahu Gejrot Original - Rp10.000
+                    </option>
+
+                    <option value="15000">
+                        Tahu Gejrot Extra Pedas - Rp15.000
+                    </option>
+
+                    <option value="5000">
+                        Es Teh Manis - Rp5.000
+                    </option>
+
                 </select>
             </div>
 
+            <!-- Jumlah -->
             <div class="form-group">
                 <label>Jumlah Porsi</label>
-                <input type="number" id="jumlah" min="1" value="1">
+
+                <input
+                    type="number"
+                    id="jumlah"
+                    min="1"
+                    value="1"
+                    oninput="hitungTotal()"
+                    required>
+
             </div>
 
+            <!-- Total -->
+            <div class="form-group">
+                <label>Total Harga</label>
+
+                <input
+                    type="text"
+                    id="total"
+                    readonly
+                    placeholder="Rp 0">
+            </div>
+
+            <!-- Tingkat Pedas -->
             <div class="form-group">
                 <label>Tingkat Kepedasan</label>
+
                 <select id="pedas">
+
                     <option>Tidak Pedas</option>
                     <option>Sedang</option>
                     <option>Pedas</option>
                     <option>Extra Pedas</option>
+
                 </select>
             </div>
 
+            <!-- Catatan -->
             <div class="form-group">
                 <label>Catatan</label>
-                <textarea id="catatan" rows="3" placeholder="Contoh: Banyak kuah, tanpa bawang"></textarea>
+
+                <textarea
+                    id="catatan"
+                    rows="3"
+                    placeholder="Contoh: Banyak kuah, tanpa bawang"></textarea>
+
             </div>
 
+            <!-- Pembayaran -->
+            <div class="form-group">
+
+                <label>Metode Pembayaran</label>
+
+                <select
+                    id="payment"
+                    onchange="showPaymentInfo()"
+                    required>
+
+                    <option value="">-- Pilih Metode Pembayaran --</option>
+
+                    <option value="cod">Tunai (COD)</option>
+                    <option value="qris">QRIS</option>
+                    <option value="dana">DANA</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="ovo">OVO</option>
+                    <option value="transfer">Transfer Bank</option>
+
+                </select>
+
+            </div>
+
+            <!-- Informasi Pembayaran -->
+            <div id="payment-info" class="payment-info"></div>
+
+            <!-- Tombol -->
             <button type="submit" class="btn-order">
                 Pesan via WhatsApp
             </button>
@@ -181,46 +270,6 @@ GOOGLE MAPS
     </div>
 
 </section>
-
-<script>
-
-document.getElementById("orderForm").addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    let nama = document.getElementById("nama").value;
-    let wa = document.getElementById("wa").value;
-    let alamat = document.getElementById("alamat").value;
-    let menu = document.getElementById("menu").value;
-    let jumlah = document.getElementById("jumlah").value;
-    let pedas = document.getElementById("pedas").value;
-    let catatan = document.getElementById("catatan").value;
-
-    let nomorWA = "085774537978"; // Ganti dengan nomor WhatsApp Anda
-
-    let pesan =
-`Halo TAHU GEJROT PAKDE BURUNG,
-
-Saya ingin memesan:
-
-👤 Nama : ${nama}
-📱 WA : ${wa}
-🍽 Menu : ${menu}
-🍛 Jumlah : ${jumlah} Porsi
-🌶 Pedas : ${pedas}
-📍 Alamat : ${alamat}
-📝 Catatan : ${catatan}
-
-Terima kasih.`;
-
-    window.open(
-        "https://wa.me/" +6285774537978+ "?text=" + encodeURIComponent(pesan),
-        "_blank"
-    );
-
-});
-
-</script>
 </body>
 
 </html>
