@@ -288,3 +288,5 @@ TAHU GEJROT PAKDE BURUNG`;
     window.open(url,"_blank");
 
 }
+
+});
