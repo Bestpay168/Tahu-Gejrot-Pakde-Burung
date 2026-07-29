@@ -6,7 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    hitungTotal();
+    updateCart();
 
     const form = document.getElementById("orderForm");
 
