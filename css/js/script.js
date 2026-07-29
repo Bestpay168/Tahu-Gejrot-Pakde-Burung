@@ -3,7 +3,16 @@
    script.js
 ========================================== */
 
-document.addEventListener("DOMContentLoaded", function () { });
+document.addEventListener("DOMContentLoaded", function () { 
+
+initMenu();
+
+    initDelivery();
+
+    initPayment();
+
+    updateCart();
+
 /* ==========================================
    EVENT TOMBOL + DAN -
 ========================================== */
@@ -18,9 +27,7 @@ menuItems.forEach(function(item){
 
     btnPlus.addEventListener("click", function(){
 
-        qty.value = parseInt(qty.value || 0) + 1;
-
-        updateCart();
+        qty.value = parseInt(qty.value)|| 0) + 1;
 
     });
 
@@ -32,7 +39,7 @@ menuItems.forEach(function(item){
 
             qty.value = jumlah - 1;
 
-            updateCart();
+
 
         }
 
@@ -46,7 +53,7 @@ menuItems.forEach(function(item){
 
         }
 
-        updateCart();
+    
 
     });
 
@@ -62,17 +69,12 @@ if(delivery){
 
     delivery.addEventListener("change", function(){
 
-        updateCart();
+    
 
     });
 
 }
 
-/* ==========================================
-   HITUNG PERTAMA KALI
-========================================== */
-
-updateCart();
     
 /* ==========================================
    INFORMASI PEMBAYARAN
@@ -100,7 +102,7 @@ function showPaymentInfo() {
 
             info.innerHTML = `
                 <h4>📱 QRIS</h4>
-                <img src="images/qris.png" width="220" alt="QRIS">
+                <img src="qris.png" width="220" alt="QRIS">
                 <p>Silakan scan QRIS untuk melakukan pembayaran.</p>
             `;
 
@@ -289,4 +291,3 @@ TAHU GEJROT PAKDE BURUNG`;
 
 }
 
-});
