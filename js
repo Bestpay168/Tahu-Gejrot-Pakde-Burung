@@ -278,39 +278,39 @@ function kirimWhatsApp() {
 
     const pesan =
 
-`🍽️ *PESANAN BARU*
+` *PESANAN BARU*
 
-👤 Nama
+ Nama
 ${nama}
 
-📱 WhatsApp
+ WhatsApp
 ${wa}
 
-📍 Alamat
+ Alamat
 ${alamat}
 
-🛒 Pesanan
+ Pesanan
 ${daftarMenu}
 
-🚚 Pengiriman
+ Pengiriman
 ${metodePengiriman}
 
-🌶️ Pedas
+ Pedas
 ${pedas}
 
-💰 Subtotal
+Subtotal
 ${subtotal}
 
-🚚 Ongkir
+Ongkir
 ${ongkir}
 
-💵 Total
+ Total
 ${total}
 
-💳 Pembayaran
+Pembayaran
 ${metodePembayaran}
 
-📝 Catatan
+Catatan
 ${catatan}
 
 Terima kasih 🙏
