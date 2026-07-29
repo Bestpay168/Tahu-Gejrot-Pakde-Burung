@@ -24,26 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* ==========================================
-   HITUNG TOTAL HARGA
-========================================== */
 
-function hitungTotal() {
-
-    const menu = document.getElementById("menu");
-    const jumlah = document.getElementById("jumlah");
-    const total = document.getElementById("total");
-
-    if (!menu || !jumlah || !total) return;
-
-    const harga = parseInt(menu.value) || 0;
-    const qty = parseInt(jumlah.value) || 0;
-
-    const hasil = harga * qty;
-
-    total.value = "Rp " + hasil.toLocaleString("id-ID");
-
-}
 
 /* ==========================================
    INFORMASI PEMBAYARAN
