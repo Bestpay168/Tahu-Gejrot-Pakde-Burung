@@ -159,55 +159,87 @@ GOOGLE MAPS
             </div>
 
             <!-- Menu -->
-            <div class="form-group">
-                <label>Menu</label>
+         <section class="order">
 
-                <select
-                    id="menu"
-                    onchange="hitungTotal()"
-                    required>
+<h2>Pesan Sekarang</h2>
 
-                    <option value="">-- Pilih Menu --</option>
+<div id="menu-list">
 
-                    <option value="10000">
-                        Tahu Gejrot Original - Rp10.000
-                    </option>
+    <div class="menu-item" data-name="Tahu Gejrot Original" data-price="10000">
 
-                    <option value="15000">
-                        Tahu Gejrot Extra Pedas - Rp15.000
-                    </option>
+        <div class="menu-info">
+            <h3>Tahu Gejrot Original</h3>
+            <p>Rp10.000</p>
+        </div>
 
-                    <option value="5000">
-                        Es Teh Manis - Rp5.000
-                    </option>
+        <div class="qty-box">
+            <button class="minus">-</button>
+            <input class="qty" type="number" value="0" min="0">
+            <button class="plus">+</button>
+        </div>
 
-                </select>
-            </div>
+    </div>
 
-            <!-- Jumlah -->
-            <div class="form-group">
-                <label>Jumlah Porsi</label>
+    <div class="menu-item" data-name="Tahu Gejrot Extra Pedas" data-price="15000">
 
-                <input
-                    type="number"
-                    id="jumlah"
-                    min="1"
-                    value="1"
-                    oninput="hitungTotal()"
-                    required>
+        <div class="menu-info">
+            <h3>Tahu Gejrot Extra Pedas</h3>
+            <p>Rp15.000</p>
+        </div>
 
-            </div>
+        <div class="qty-box">
+            <button class="minus">-</button>
+            <input class="qty" type="number" value="0" min="0">
+            <button class="plus">+</button>
+        </div>
 
-            <!-- Total -->
-            <div class="form-group">
-                <label>Total Harga</label>
+    </div>
 
-                <input
-                    type="text"
-                    id="total"
-                    readonly
-                    placeholder="Rp 0">
-            </div>
+    <div class="menu-item" data-name="Es Teh Manis" data-price="5000">
+
+        <div class="menu-info">
+            <h3>Es Teh Manis</h3>
+            <p>Rp5.000</p>
+        </div>
+
+        <div class="qty-box">
+            <button class="minus">-</button>
+            <input class="qty" type="number" value="0" min="0">
+            <button class="plus">+</button>
+        </div>
+
+    </div>
+
+</div>
+
+<hr>
+
+<label>Metode Pengambilan</label>
+
+<select id="deliveryMethod">
+
+<option value="delivery">🚚 Diantar (+Rp10.000)</option>
+
+<option value="pickup">🛍 Pickup (Gratis Ongkir)</option>
+
+</select>
+
+<hr>
+
+<h3>Keranjang</h3>
+
+<div id="cart"></div>
+
+<hr>
+
+<h3>Subtotal : <span id="subtotal">Rp0</span></h3>
+
+<h3>Ongkir : <span id="ongkir">Rp10.000</span></h3>
+
+<h2>Total : <span id="total">Rp10.000</span></h2>
+
+</section>
+
 
             <!-- Tingkat Pedas -->
             <div class="form-group">
