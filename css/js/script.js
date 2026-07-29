@@ -120,11 +120,6 @@ function kirimWhatsApp() {
     const wa = document.getElementById("wa").value.trim();
     const alamat = document.getElementById("alamat").value.trim();
 
-    const menu = document.getElementById("menu");
-    const namaMenu = menu.options[menu.selectedIndex].text;
-
-    const jumlah = document.getElementById("jumlah").value;
-    const total = document.getElementById("total").value;
     const pedas = document.getElementById("pedas").value;
     const catatan = document.getElementById("catatan").value;
     const pembayaran = document.getElementById("payment");
@@ -135,7 +130,6 @@ function kirimWhatsApp() {
         nama === "" ||
         wa === "" ||
         alamat === "" ||
-        menu.value === "" ||
         pembayaran.value === ""
     ) {
 
