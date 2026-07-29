@@ -141,7 +141,7 @@ function showPaymentInfo() {
 
             info.innerHTML = `
             <h4>📱 QRIS</h4>
-            <img src="images/qris.png" width="220">
+            <img src="qris.png" width="220">
             `;
             break;
 
