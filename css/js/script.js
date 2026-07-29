@@ -2,13 +2,9 @@
 /* =========================================
    TAHU GEJROT PAKDE BURUNG
    script.js
-========================================== */
-
-document.addEventListener("DOMContentLoaded", function updateCart() {
-
-    updateCart();
+========================================== *
 const total =
-document.getElementById("cartTotal").textContent;
+document.getElementById("Total").textContent;
     const form = document.getElementById("orderForm");
 
     if (form) {
