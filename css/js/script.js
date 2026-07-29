@@ -4,10 +4,11 @@
    script.js
 ========================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function updateCart() {
 
     updateCart();
-
+const total =
+document.getElementById("cartTotal").textContent;
     const form = document.getElementById("orderForm");
 
     if (form) {
