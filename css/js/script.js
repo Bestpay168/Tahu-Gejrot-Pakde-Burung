@@ -4,8 +4,76 @@
 ========================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
+/* ==========================================
+   EVENT TOMBOL + DAN -
+========================================== */
 
-    const menuItems =
+const menuItems = document.querySelectorAll(".menu-item");
+
+menuItems.forEach(function(item){
+
+    const btnPlus = item.querySelector(".plus");
+    const btnMinus = item.querySelector(".minus");
+    const qty = item.querySelector(".qty");
+
+    btnPlus.addEventListener("click", function(){
+
+        qty.value = parseInt(qty.value || 0) + 1;
+
+        updateCart();
+
+    });
+
+    btnMinus.addEventListener("click", function(){
+
+        let jumlah = parseInt(qty.value || 0);
+
+        if(jumlah > 0){
+
+            qty.value = jumlah - 1;
+
+            updateCart();
+
+        }
+
+    });
+
+    qty.addEventListener("input", function(){
+
+        if(qty.value < 0){
+
+            qty.value = 0;
+
+        }
+
+        updateCart();
+
+    });
+
+});
+
+/* ==========================================
+   EVENT DELIVERY / PICKUP
+========================================== */
+
+const delivery = document.getElementById("deliveryMethod");
+
+if(delivery){
+
+    delivery.addEventListener("change", function(){
+
+        updateCart();
+
+    });
+
+}
+
+/* ==========================================
+   HITUNG PERTAMA KALI
+========================================== */
+
+updateCart();
+    
 /* ==========================================
    INFORMASI PEMBAYARAN
 ========================================== */
