@@ -115,17 +115,23 @@ function showPaymentInfo() {
    KIRIM KE WHATSAPP
 ========================================== */
 
+/* ==========================================
+   KIRIM PESAN KE WHATSAPP
+========================================== */
+
 function kirimWhatsApp() {
 
     const nama = document.getElementById("nama").value.trim();
     const wa = document.getElementById("wa").value.trim();
     const alamat = document.getElementById("alamat").value.trim();
-
     const pedas = document.getElementById("pedas").value;
     const catatan = document.getElementById("catatan").value;
-    const pembayaran = document.getElementById("payment");
 
-    const metode = pembayaran.options[pembayaran.selectedIndex].text;
+    const pembayaran = document.getElementById("payment");
+    const metodeBayar = pembayaran.options[pembayaran.selectedIndex].text;
+
+    const delivery = document.getElementById("deliveryMethod");
+    const metodeAmbil = delivery.options[delivery.selectedIndex].text;
 
     if (
         nama === "" ||
@@ -134,80 +140,108 @@ function kirimWhatsApp() {
         pembayaran.value === ""
     ) {
 
-        alert("Silakan lengkapi semua data.");
+        alert("Silakan lengkapi data terlebih dahulu.");
 
         return;
 
     }
 
-    const pesan =
+    let daftarMenu = "";
+    let adaPesanan = false;
 
-`*PESANAN BARU*
-========================
+    document.querySelectorAll(".menu-item").forEach(function(item){
 
-👤 Nama : ${nama}
+        const namaMenu = item.dataset.name;
+        const harga = parseInt(item.dataset.price);
 
-📱 WhatsApp : ${wa}
+        const qty = parseInt(
+            item.querySelector(".qty").value
+        );
 
-📍 Alamat :
-${alamat}
+        if(qty>0){
 
-🍽 Menu :
-${namaMenu}
+            adaPesanan = true;
 
-🍴 Jumlah :
-${jumlah} Porsi
+            const totalItem = harga*qty;
 
-🌶 Pedas :
-${pedas}
-
-💰 Total :
-${total}
-
-💳 Pembayaran :
-${metode}
-
-📝 Catatan :
-${catatan}
-
-Terima kasih.
-TAHU GEJROT PAKDE BURUNG`;
-
-    const nomorAdmin = "6285774537978";
-
-    const url =
-
-"https://wa.me/" +
-nomorAdmin +
-"?text=" +
-encodeURIComponent(pesan);
-
-    window.open(url, "_blank");
-
-}
-
-/* ==========================================
-   SCROLL HALUS
-========================================== */
-
-document.querySelectorAll('a[href^="#"]').forEach(function(link){
-
-    link.addEventListener("click", function(e){
-
-        const tujuan = document.querySelector(this.getAttribute("href"));
-
-        if(tujuan){
-
-            e.preventDefault();
-
-            tujuan.scrollIntoView({
-
-                behavior:"smooth"
-
-            });
+            daftarMenu +=
+            "• " +
+            namaMenu +
+            " x" +
+            qty +
+            " = Rp" +
+            totalItem.toLocaleString("id-ID") +
+            "\n";
 
         }
 
     });
 
-});
+    if(!adaPesanan){
+
+        alert("Silakan pilih menu terlebih dahulu.");
+
+        return;
+
+    }
+
+    const subtotal =
+    document.getElementById("subtotal").textContent;
+
+    const ongkir =
+    document.getElementById("ongkir").textContent;
+
+    const total =
+    document.getElementById("total").textContent;
+
+    const pesan =
+`*🍽️ PESANAN BARU*
+==========================
+
+👤 Nama
+${nama}
+
+📱 WhatsApp
+${wa}
+
+📍 Alamat
+${alamat}
+
+🛍️ Metode
+${metodeAmbil}
+
+🍴 Daftar Pesanan
+${daftarMenu}
+
+🌶️ Tingkat Pedas
+${pedas}
+
+💰 Subtotal
+${subtotal}
+
+🚚 Ongkir
+${ongkir}
+
+💵 Total
+${total}
+
+💳 Pembayaran
+${metodeBayar}
+
+📝 Catatan
+${catatan}
+
+Terima kasih 🙏
+TAHU GEJROT PAKDE BURUNG`;
+
+    const nomorAdmin="6285774537978";
+
+    const url=
+    "https://wa.me/"
+    +nomorAdmin+
+    "?text="+
+    encodeURIComponent(pesan);
+
+    window.open(url,"_blank");
+
+}
