@@ -149,7 +149,7 @@ function showPaymentInfo() {
 
             info.innerHTML = `
             <h4>🔵 DANA</h4>
-            <strong>081234567890</strong>
+            <strong>089614001997</strong>
             `;
             break;
 
@@ -157,7 +157,7 @@ function showPaymentInfo() {
 
             info.innerHTML = `
             <h4>🟢 GoPay</h4>
-            <strong>081234567890</strong>
+            <strong>089614001997</strong>
             `;
             break;
 
@@ -165,7 +165,7 @@ function showPaymentInfo() {
 
             info.innerHTML = `
             <h4>🟣 OVO</h4>
-            <strong>081234567890</strong>
+            <strong>089614001997</strong>
             `;
             break;
 
@@ -176,9 +176,9 @@ function showPaymentInfo() {
 
             <p>BCA</p>
 
-            <strong>1234567890</strong>
+            <strong>5491006693</strong>
 
-            <p>a.n. Pakde Burung</p>
+            <p>a.n. Dwi Widianingtias</p>
             `;
             break;
 
@@ -280,40 +280,40 @@ function kirimWhatsApp() {
 
 ` *PESANAN BARU*
 
- Nama
+Nama:
 ${nama}
 
- WhatsApp
+WhatsApp:
 ${wa}
 
- Alamat
+Alamat:
 ${alamat}
 
- Pesanan
+Pesanan:
 ${daftarMenu}
 
- Pengiriman
+Pengiriman:
 ${metodePengiriman}
 
- Pedas
+Pedas:
 ${pedas}
 
-Subtotal
+Subtotal:
 ${subtotal}
 
-Ongkir
+Ongkir:
 ${ongkir}
 
- Total
+Total:
 ${total}
 
 Pembayaran
 ${metodePembayaran}
 
-Catatan
+Catatan:
 ${catatan}
 
-Terima kasih 🙏
+Terima kasih 
 TAHU GEJROT PAKDE BURUNG`;
 
     const nomorAdmin = "6285774537978";
