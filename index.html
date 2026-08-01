@@ -1,79 +1,421 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="id">
-
 <head>
 
 <meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>TAHU GEJROT PAKDE BURUNG</title>
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+<!-- ================= NAVBAR ================= -->
 
-<img src="logo.png" width="120">
+<header class="header">
 
-<h1>TAHU GEJROT PAKDE BURUNG</h1>
+<div class="logo">
+<img src="logo.png" alt="Logo">
+<h2>TAHU GEJROT <span>PAKDE BURUNG</span></h2>
+</div>
 
-<p>Pedas • Segar • Bikin Nagih</p>
+<nav class="navbar" id="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">Tentang</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+        <a href="https://wa.me/6285774537978" class="btn-navbar">
+            Pesan Sekarang
+        </a>
+ </nav>
+
+<div class="burger" id="burger">☰</div>
 
 </header>
+<div id="menuOverlay" class="menu-overlay"></div>
+<script src="navbar.js"></script>
 
-<section>
+</body>
+</html>
+<!-- ================= HERO ================= -->
 
-<img src="banner.jpg" width="100%">
+<section class="hero">
 
-</section>
+<div class="overlay"></div>
 
-<section>
+<div class="hero-content">
 
-<h2>Maskot</h2>
+<h1>
 
-<img src="mascot.png" width="250">
+TAHU GEJROT<br>
 
-</section>
+PAKDE BURUNG
 
-<section>
+</h1>
 
-<h2>Menu</h2>
+<p>
 
-<img src="produk1.png" width="250">
+Pedas • Segar • Bikin Nagih
 
+</p>
 
-<p>Mulai Rp12.000</p>
+<div class="hero-button">
 
-</section>
+<a href="#menu" class="btn1">
 
-<section>
-
-<h2>Gerobak Kami</h2>
-
-<img src="gerobak.png" width="300">
-
-</section>
-
-<section>
-
-
-</section>
-
-<section>
-
-<a href="#order"
-   class="btn-order"
-   data-menu="Extra Pedas">
-
-   Pesan Sekarang
+Lihat Menu
 
 </a>
 
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot"
+   class="btn2"
+   target="_blank"
+   rel="noopener">
+   Pesan WhatsApp
+</a>
+
+</div>
+
+</div>
+
 </section>
+
+<!-- ================= MENU ================= -->
+
+<section class="menu" id="menu">
+
+<div class="container">
+
+<h2>
+
+MENU FAVORIT
+
+</h2>
+
+<p>
+
+Pilihan menu terbaik untuk Anda
+
+</p>
+
+<div class="card-area">
+
+<div class="card">
+
+<img src="menu1.png"> 
+
+<h3>
+
+Tahu Gejrot Original
+
+</h3>
+
+<span>
+
+Rp10.000
+
+</span>
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot">
+Pesan
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="menu2.png"> 
+
+<h3>
+
+Extra Pedas
+
+</h3>
+
+<span>
+
+Rp15.000
+
+</span>
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot">
+Pesan
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="menu3.png"> 
+
+
+<h3>
+
+Jumbo
+
+</h3>
+
+<span>
+
+Rp20.000
+
+</span>
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot">
+Pesan
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="menu4.png"> 
+
+<h3>
+
+Komplit
+
+</h3>
+
+<span>
+
+Rp25.000
+
+</span>
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot">
+Pesan
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+<div class="about">
+
+<div class="left">
+
+<img src="about.png"> 
+
+</div>
+
+<div class="right">
+
+<h2>
+
+Tentang Kami
+
+</h2>
+
+<p>
+
+TAHU GEJROT PAKDE BURUNG menghadirkan cita rasa khas Cirebon dengan kuah segar, pedas, manis, dan gurih. Menggunakan bahan berkualitas dan diracik setiap hari agar menghasilkan rasa yang konsisten.
+
+</p>
+
+<ul>
+
+<li>✔ Higienis</li>
+
+<li>✔ Bumbu Khas</li>
+
+<li>✔ Harga Bersahabat</li>
+
+<li>✔ Pelayanan Cepat</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<h2>
+
+GALERI
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="gallery1.jpg">
+
+<img src="gallery2.jpg">
+
+<img src="gallery3.jpg">
+
+<img src="gallery4.jpg">
+
+<img src="gallery5.jpg">
+
+<img src="gallery6.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Siap Menikmati Tahu Gejrot Hari Ini?
+
+</h2>
+
+<p>
+
+Klik tombol di bawah dan pesan sekarang juga.
+
+</p>
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot">
+Pesan via WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<div class="container footer">
+
+<div>
+
+<h3>
+
+TAHU GEJROT PAKDE BURUNG
+
+</h3>
+
+<p>
+
+Pedas • Segar • Bikin Nagih
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Kontak
+
+</h4>
+
+<p>
+
+WhatsApp
+ 085774537978
+
+</p>
+
+<p>
+
+Instagram 
+ @tahugejrotpakdeburung
+
+</p>
+
+
+</div>
+
+<div>
+
+<h4>
+
+Alamat
+
+</h4>
+
+<p>
+
+Semanan
+
+Jakarta Barat
+
+</p>
+
+<!-- ======================================
+GOOGLE MAPS
+====================================== -->
+
+<section id="contact" class="maps">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Lokasi</span>
+
+            <h2>Temukan Kami</h2>      
+<p>
+Kunjungi TAHU GEJROT PAKDE BURUNG atau pesan melalui WhatsApp.
+</p>
+</div>
+
+<div class="map-box">
+
+<iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7467248387097!2d106.69670287409542!3d-6.16466366041404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f952f2b754e1%3A0x637ce7265516e319!2sTahu%20Gejrot%20Pakde%20Burung!5e0!3m2!1sid!2sid!4v1785217780245!5m2!1sid!2sid"
+ loading="lazy"
+ allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+
+<div class="copyright">
+
+© 2026 TAHU GEJROT PAKDE BURUNG
+
+</div>
+
+</footer>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/6285774537978?text=Halo%20Pakde%20Burung,%20saya%20ingin%20memesan%20Tahu%20Gejrot"
+   class="wa"
+   target="_blank"
+   rel="noopener">
+
+    <img src="icons/whatsapp.svg" alt="WhatsApp">
 
 
 <!-- ======================================
