@@ -147,7 +147,7 @@ HEADER
     cursor:pointer;
 }
 
-.overlay{
+.menu-overlay{
     position:fixed;
     inset:0;
 
@@ -161,7 +161,7 @@ HEADER
     z-index:999;
 }
 
-.overlay.show{
+.menu-overlay.show{
     opacity:1;
     visibility:visible;
 }
