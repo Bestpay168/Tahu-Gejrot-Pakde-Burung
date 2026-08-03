@@ -53,7 +53,7 @@ if (payment) {
 
 });
 
-}
+
 
 /* ==========================================
    UPDATE SHOPPING CART
@@ -236,7 +236,7 @@ function kirimWhatsApp() {
 
     }
 
-    let item-Menu = "";
+    let produkMenu = "";
 
     let adaPesanan = false;
 
