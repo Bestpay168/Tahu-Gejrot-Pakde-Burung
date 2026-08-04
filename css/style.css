@@ -172,7 +172,7 @@ body{
 @media (max-width:767px){
 
     .burger{
-        display:block;
+        display:flex;
         z-index:10002;
     }
 
