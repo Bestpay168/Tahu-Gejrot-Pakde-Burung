@@ -130,7 +130,7 @@ HEADER
 }
 
 .burger{
-    display:none;
+    display:flex;
 
     width:45px;
     height:45px;
