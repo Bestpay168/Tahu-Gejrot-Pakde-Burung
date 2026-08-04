@@ -366,21 +366,184 @@
 
 @media (max-width:768px){
 
-    /* ==========================
-       Container
-    ========================== */
+ 
+.burger{
+    display:none;
+}
 
-    .container{
+.navbar{
+    position:fixed;
+    top:70px;
+    left:0;
+    width:100%;
+    display:none;
+    background:#222;
+}
 
-        width:min(100% - 1.5rem,720px);
 
-    }
 
-    section{
+.navbar.active{
+    display:flex;
+    flex-direction:column;
+    padding:15px 0;
+}
 
-        padding:70px 0;
 
-    }
+.btn-order{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.hero{
+
+    min-height:100vh;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.btn1,
+.btn2{
+
+    width:100%;
+
+}
+
+.card{
+
+    border-radius:15px;
+
+}
+
+.card img{
+
+    height:220px;
+
+}
+
+.card h3{
+
+    font-size:20px;
+
+}
+
+.card span{
+
+    font-size:22px;
+
+}
+
+.left img{
+
+    border-radius:15px;
+
+}
+
+.right p{
+
+    font-size:15px;
+
+}
+
+.right ul li{
+
+    font-size:15px;
+
+}
+
+.cta{
+
+    padding:70px 20px;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+.cta p{
+
+    font-size:16px;
+
+}
+
+.cta a{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.footer h3{
+
+    font-size:24px;
+
+}
+
+.footer h4{
+
+    font-size:18px;
+
+}
+
+.wa{
+
+    width:60px;
+
+    height:60px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+.wa img{
+
+    width:30px;
+
+}
+
+.top{
+
+    width:55px;
+
+    height:55px;
+
+    left:18px;
+
+    bottom:18px;
+
+}
+.about-box{
+    grid-template-columns:1fr;
+}
+
+.left{
+    order:1;
+}
+
+.right{
+    order:2;
+}
+
+}
 
     /* ==========================
        Header
