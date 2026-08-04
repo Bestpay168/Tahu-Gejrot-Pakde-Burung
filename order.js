@@ -250,7 +250,7 @@ function kirimWhatsApp() {
 
             const harga = parseInt(item.dataset.price);
 
-            daftarproduk +=
+            produkMenu +=
                 "• " +
                 item.dataset.name +
                 " x" +
@@ -294,7 +294,7 @@ ${wa}
 ${alamat}                
 
 🛒 Pesanan                
-${daftarMenu}                
+${produkMenu}                
 
 🚚 Pengiriman                
 ${metodePengiriman}                
