@@ -1724,6 +1724,55 @@ footer {
     background:#e86800;
 }
 
+
+
+.qty-box{
+
+}
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+.qty-box button{
+
+}
+
+width: 40px;
+
+height: 40px;
+
+border: none;
+
+background: #ff9800;
+
+color: #fff;
+
+font-size: 20px;
+
+border-radius: 8px;
+
+cursor: pointer;
+
+.qty-box input {
+
+}
+
+width: 60px;
+
+height: 40px;
+
+text-align: center;
+
+border: 1px solid #ddd;
+
+border-radius: 8px;
+
+font-size: 16px;
+}
+
 /*==========================
 WHATSAPP FLOATING
 ==========================*/
