@@ -171,6 +171,18 @@ body{
 
 @media (max-width:767px){
 
+    .logo{
+        gap:8px:
+    }
+
+    .logo img{
+     width:40px;
+    }
+
+    .logo h2{
+     font-size:16px
+    }
+
     .burger{
         display:flex;
         z-index:999;
