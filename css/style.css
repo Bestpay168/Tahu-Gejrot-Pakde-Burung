@@ -1670,7 +1670,7 @@ footer {
 }
 
 .order-form{
-    max-width:700px;
+    max-width:100%;
     margin:auto;
     background:#fff;
     padding:35px;
@@ -1754,8 +1754,6 @@ cursor: pointer;
 }
 
 .qty-box input {
-
-}
 
 width: 40px;
 
