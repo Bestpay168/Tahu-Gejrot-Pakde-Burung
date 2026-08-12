@@ -50,6 +50,16 @@ ja:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+ko:{
+    navHome:"홈",
+    navMenu:"메뉴",
+    navAbout:"소개",
+    navGallery:"갤러리",
+    navMaps:"위치",
+    navOrder:"주문",   
+    navFaq:"FAQ",
+    navKon:"Kontak",
+
 
 function setLang(language){
 
