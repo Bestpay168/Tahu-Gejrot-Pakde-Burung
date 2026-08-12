@@ -48,6 +48,11 @@ feature1:"✔ Higienis",
     feature3:"✔ Harga Bersahabat",
     feature4:"✔ Pelayanan Cepat",
 
+galTitle:"GALERI"
+ctaTitle:"Siap Menikmati Tahu Gejrot Hari Ini?",
+ctaDesc:"Klik tombol di bawah dan pesan sekarang juga.",
+
+
 },
 
 en:{
@@ -86,6 +91,9 @@ feature1:"✔ Hygienic",
     feature3:"✔ Affordable Price",
     feature4:"✔ Fast Service",
 
+galTitle:"GALLERY",
+ctaTitle:"Ready to Enjoy Tahu Gejrot Today?",
+ctaDesc:"Click the button below and order now.",
 
 
 },
@@ -125,6 +133,12 @@ feature1:"✔ 卫生安全",
     feature2:"✔ 特色调味",
     feature3:"✔ 价格实惠",
     feature4:"✔ 服务快捷",
+
+galTitle:"图库",
+ctaTitle:"准备好今天品尝印尼豆腐了吗？",
+ctaDesc:"点击下方按钮，立即下单。",
+
+
 },
 
 ja:{
@@ -164,6 +178,10 @@ feature1:"✔ 衛生的",
     feature4:"✔ 素早いサービス",
 
 
+galTitle:"ギャラリー",
+ctaTitle:"今日は豆腐ゲジョロットを楽しみませんか？",
+ctaDesc:"下のボタンをクリックして、今すぐご注文ください。",
+
 },
 
 ko:{
@@ -202,6 +220,9 @@ feature1:"✔ 위생적",
     feature3:"✔ 합리적인 가격",
     feature4:"✔ 빠른 서비스",
 
+galTitle:"갤러리",
+ctaTitle:"오늘 타후 게조롯을 맛볼 준비가 되셨나요?",
+ctaDesc:"아래 버튼을 눌러 지금 바로 주문하세요.",
 
 },
 
@@ -243,7 +264,10 @@ aboutTitle:"من نحن",
     feature3:"✔ أسعار مناسبة",
     feature4:"✔ خدمة سريعة",
 
+galTitle:"معرض الصور",
 
+   ctaTitle:"هل أنت مستعد للاستمتاع بتاهو جيجروت اليوم؟",
+    ctaDesc:"اضغط على الزر أدناه واطلب الآن.",
 
 }
 
@@ -302,6 +326,10 @@ document.getElementById("feature3").textContent = lang[language].feature3;
 
 document.getElementById("feature4").textContent = lang[language].feature4;
 
+document.getElementById("galTitle").textContent=lang[language].galTitle;
+
+document.getElementById("ctaTitle").textContent=lang[language].ctaTitle;
+document.getElementById("ctaDesc").textContent=lang[language].ctaDesc;
 
 }
 
