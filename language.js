@@ -93,7 +93,7 @@ feature1:"✔ Hygienic",
 
 galTitle:"GALLERY",
 ctaTitle:"Ready to Enjoy Tahu Gejrot Today?",
-ctaDesc:"Click the button below and order now.",
+ctaDesc:"Click the button below and order now",
 
 
 },
@@ -177,10 +177,9 @@ feature1:"✔ 衛生的",
     feature3:"✔ お手頃価格",
     feature4:"✔ 素早いサービス",
 
-
 galTitle:"ギャラリー",
-ctaTitle:"今日は豆腐ゲジョロットを楽しみませんか？",
-ctaDesc:"下のボタンをクリックして、今すぐご注文ください。",
+ctaTitle:"今日は豆腐ゲジョロットを楽しみませんか",
+ctaDesc:"下のボタンをクリックして、今すぐご注文ください",
 
 },
 
@@ -328,6 +327,7 @@ document.getElementById("feature4").textContent = lang[language].feature4;
 document.getElementById("galTitle").textContent=lang[language].galTitle;
 
 document.getElementById("ctaTitle").textContent=lang[language].ctaTitle;
+
 document.getElementById("ctaDesc").textContent=lang[language].ctaDesc;
 
 }
