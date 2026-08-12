@@ -22,9 +22,8 @@ ko:{
     navMaps:"위치",
     navOrder:"주문",   
     navFaq:"FAQ",
-    navKon:"Kontak",
+    navKon:"Kontak"
 
-},
 
 
 
