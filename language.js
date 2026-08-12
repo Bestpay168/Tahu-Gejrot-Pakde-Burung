@@ -96,7 +96,7 @@ ar:{
     navGallery:"المعرض",
     navMaps:"الموقع",
     navOrder:"اطلب الآن",
-    navFaq"الأسئلة الشائعة",
+    navFaq:"الأسئلة الشائعة",
     navKon:"اتصل بنا",
 
     heroTitle:"تاهو جيجروت باكدي بورونغ",
