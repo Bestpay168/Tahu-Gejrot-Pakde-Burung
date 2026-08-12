@@ -19,6 +19,7 @@ id:{
     navOrder:"Pesan",
     navFaq:"FAQ",
     navKon:"Kontak",
+},
 
 en:{
     navHome:"Home",
@@ -30,6 +31,8 @@ en:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+},
+
 zh:{
     navHome:"首页",
     navMenu:"菜单",
@@ -39,6 +42,8 @@ zh:{
     navOrder:"订购",
     navFaq:"FAQ",
     navKon:"Kontak",
+
+},
 
 ja:{
     navHome:"ホーム",
@@ -50,6 +55,8 @@ ja:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+},
+
 ko:{
     navHome:"홈",
     navMenu:"메뉴",
@@ -60,6 +67,8 @@ ko:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+},
+
 ar:{
     navHome:"الرئيسية",
     navMenu:"القائمة",
@@ -69,6 +78,7 @@ ar:{
     navOrder:"اطلب الآن",
     navFaq:"FAQ",
     navKon:"Kontak",
+
 
 }
 
