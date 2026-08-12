@@ -66,6 +66,17 @@ suma3:"Bisa. Kami melayani pesanan untuk acara, kantor, sekolah, arisan, maupun 
 suma4:"Ya. Anda dapat memesan melalui WhatsApp atau layanan pengantaran yang tersedia.",
 suma5:"Senin–Minggu pukul 13.00–23.00 WIB.",
 
+nameLabel:"Nama",
+    phoneLabel:"Nomor WhatsApp",
+    addressLabel:"Alamat",
+    menuLabel:"Pilih Menu",
+    spicyLabel:"Level Pedas",
+    noteLabel:"Catatan",
+    deliveryLabel:"Metode Pengiriman",
+    pickupLabel:"Ambil di Tempat",
+
+    paymentLabel:"Metode Pembayaran",
+
 },
 
 en:{
@@ -122,6 +133,18 @@ suma3:"Yes. We accept bulk orders for events, offices, schools, gatherings, and 
 suma4:"Yes. You can order via WhatsApp or available delivery services.",
 suma5:"Monday–Sunday, 1:00 PM – 11:00 PM.",
 
+orderTitle:"Order Form",
+    orderDesc:"Please fill in the form below.",
+
+    nameLabel:"Name",
+    phoneLabel:"WhatsApp Number",
+    addressLabel:"Address",
+    menuLabel:"Select Menu",
+    spicyLabel:"Spicy Level",
+    noteLabel:"Notes",
+    deliveryLabel:"Delivery Method",
+    pickupLabel:"Pickup",
+paymentLabel:"Payment Method",
 },
 
 zh:{
@@ -177,6 +200,20 @@ suma2:"价格从每份 Rp10.000 起，请查看菜单了解更多信息。",
 suma3:"可以。我们接受活动、公司、学校、聚会等团体订单。",
 suma4:"提供。您可以通过 WhatsApp 或配送服务下单。",
 suma5:"周一至周日 13:00–23:00。",
+
+orderTitle:"订单表单",
+    orderDesc:"请填写以下信息。",
+
+    nameLabel:"姓名",
+    phoneLabel:"WhatsApp号码",
+    addressLabel:"地址",
+    menuLabel:"选择菜单",
+    spicyLabel:"辣度",
+    noteLabel:"备注",
+    deliveryLabel:"配送方式",
+    pickupLabel:"到店自取",
+
+    paymentLabel:"付款方式",
 },
 
 ja:{
@@ -233,6 +270,19 @@ suma3:"はい。イベント、会社、学校、集まりなどのご注文を�
 suma4:"はい。WhatsAppまたは利用可能な配達サービスからご注文いただけます。",
 suma5:"毎日 13:00～23:00です。",
 
+orderTitle:"注文フォーム",
+    orderDesc:"以下の情報をご入力ください。",
+
+    nameLabel:"お名前",
+    phoneLabel:"WhatsApp番号",
+    addressLabel:"住所",
+    menuLabel:"メニューを選択",
+    spicyLabel:"辛さレベル",
+    noteLabel:"備考",
+    deliveryLabel:"受け取り方法",
+     pickupLabel:"店頭受取",
+    
+      paymentLabel:"支払い方法",
 
 },
 
@@ -289,6 +339,20 @@ suma2:"1인분 가격은 Rp10,000부터입니다. 자세한 내용은 메뉴를 
 suma3:"네. 행사, 회사, 학교, 모임 등 단체 주문을 받습니다.",
 suma4:"네. WhatsApp 또는 이용 가능한 배달 서비스를 통해 주문하실 수 있습니다.",
 suma5:"매일 오후 1시부터 오후 11시까지 운영합니다.",
+
+orderTitle:"주문 양식",
+    orderDesc:"아래 정보를 입력해 주세요.",
+
+    nameLabel:"이름",
+    phoneLabel:"WhatsApp 번호",
+    addressLabel:"주소",
+    menuLabel:"메뉴 선택",
+    spicyLabel:"매운맛 단계",
+    noteLabel:"메모",
+    deliveryLabel:"배송 방법",
+    pickupLabel:"매장 수령",
+
+    paymentLabel:"결제 방법",
 },
 
 ar:{
@@ -349,6 +413,18 @@ faqTitle:"الأسئلة الشائعة",
     suma4:"نعم، يمكنك الطلب عبر واتساب أو من خلال خدمات التوصيل المتاحة.",
     suma5:"يوميًا من الساعة 13:00 إلى 23:00.",
 
+orderTitle:"نموذج الطلب",
+    orderDesc:"يرجى تعبئة البيانات التالية.",
+
+    nameLabel:"الاسم",
+    phoneLabel:"رقم واتساب",
+    addressLabel:"العنوان",
+    menuLabel:"اختر القائمة",
+    spicyLabel:"درجة الحارة",
+    noteLabel:"ملاحظات",
+    deliveryLabel:"طريقة التوصيل",
+    pickupLabel:"الاستلام من المتجر",
+    paymentLabel:"طريقة الدفع",
 
 }
 
@@ -429,6 +505,20 @@ document.getElementById("suma2").textContent=lang[language].suma2;
 document.getElementById("suma3").textContent=lang[language].suma3;
 document.getElementById("suma4").textContent=lang[language].suma4;
 document.getElementById("suma5").textContent=lang[language].suma5;
+
+document.getElementById("orderTitle").textContent = lang[language].orderTitle;
+document.getElementById("orderDesc").textContent = lang[language].orderDesc;
+document.getElementById("nameLabel").textContent = lang[language].nameLabel;
+document.getElementById("phoneLabel").textContent = lang[language].phoneLabel;
+document.getElementById("addressLabel").textContent = lang[language].addressLabel;
+document.getElementById("menuLabel").textContent = lang[language].menuLabel;
+document.getElementById("spicyLabel").textContent = lang[language].spicyLabel;
+document.getElementById("noteLabel").textContent = lang[language].noteLabel;
+document.getElementById("deliveryLabel").textContent = lang[language].deliveryLabel;
+document.getElementById("pickupLabel").textContent = lang[language].pickupLabel;
+document.getElementById("paymentLabel").textContent = lang[language].paymentLabel;
+
+
 
 }
 
