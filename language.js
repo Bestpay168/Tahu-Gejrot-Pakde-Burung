@@ -60,7 +60,19 @@ ko:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+ar:{
+    navHome:"الرئيسية",
+    navMenu:"القائمة",
+    navAbout:"من نحن",
+    navGallery:"المعرض",
+    navMaps:"الموقع",
+    navOrder:"اطلب الآن",
+    navFaq:"FAQ",
+    navKon:"Kontak",
 
+},
+}
+};
 function setLang(language){
 
 document.getElementById("navHome").textContent=lang[language].navHome;
