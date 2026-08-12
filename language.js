@@ -40,6 +40,16 @@ zh:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+ja:{
+    navHome:"ホーム",
+    navMenu:"メニュー",
+    navAbout:"会社概要",
+    navGallery:"ギャラリー",   
+    navMaps:"所在地",
+    navOrder:"注文",
+    navFaq:"FAQ",
+    navKon:"Kontak",
+
 
 function setLang(language){
 
