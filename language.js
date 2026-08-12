@@ -52,6 +52,19 @@ galTitle:"GALERI",
 ctaTitle:"Siap Menikmati Tahu Gejrot Hari Ini?",
 ctaDesc:"Klik tombol di bawah dan pesan sekarang juga",
 
+faqTitle:"FAQ",
+faqSub:"Pertanyaan yang Sering Diajukan",
+faqDesc:"Temukan jawaban atas pertanyaan yang paling sering ditanyakan oleh pelanggan kami.",
+faq1:"Apakah Tahu Gejrot Pakde Burung halal?",
+faq2:"Berapa harga satu porsi?",
+faq3:"Apakah bisa pesan dalam jumlah banyak?",
+faq4:"Apakah tersedia layanan antar?",
+faq5:"Jam operasionalnya kapan?",
+suma1:"Ya. Kami menggunakan bahan-bahan yang halal dan diproses dengan menjaga kebersihan.",
+suma2:"Harga mulai dari Rp10.000 per porsi. Silakan lihat menu untuk informasi lengkap.",
+suma3:"Bisa. Kami melayani pesanan untuk acara, kantor, sekolah, arisan, maupun lainnya.",
+suma4:"Ya. Anda dapat memesan melalui WhatsApp atau layanan pengantaran yang tersedia.",
+suma5:"Senin–Minggu pukul 13.00–23.00 WIB.",
 
 },
 
@@ -95,6 +108,19 @@ galTitle:"GALLERY",
 ctaTitle:"Ready to Enjoy Tahu Gejrot Today?",
 ctaDesc:"Click the button below and order now",
 
+faqTitle:"FAQ",
+faqSub:"Frequently Asked Questions",
+faqDesc:"Find answers to the questions our customers ask most often.",
+faq1:"Is Tahu Gejrot Pakde Burung halal?",
+faq2:"How much is one serving?",
+faq3:"Can I place a large order?",
+faq4:"Do you offer delivery service?",
+faq5:"What are your opening hours?",
+suma1:"Yes. We use halal ingredients and prepare them with strict hygiene standards.",
+suma2::"Prices start from Rp10,000 per serving. Please check our menu for complete information.",
+suma3:"Yes. We accept bulk orders for events, offices, schools, gatherings, and more.",
+suma4:"Yes. You can order via WhatsApp or available delivery services.",
+suma5:"Monday–Sunday, 1:00 PM – 11:00 PM.",
 
 },
 
@@ -138,7 +164,19 @@ galTitle:"图库",
 ctaTitle:"准备好今天品尝印尼豆腐了吗？",
 ctaDesc:"点击下方按钮，立即下单。",
 
-
+faqTitle:"常见问题",
+faqSub:"常见问题解答",
+faqDesc:"查看顾客最常提出的问题及答案。",
+faq1:"Pakde Burung 印尼特色豆腐是清真食品吗？",
+faq2:"一份多少钱？",
+faq3:"可以大量订购吗？",
+faq4:"提供送餐服务吗？",
+faq5:"营业时间是什么时候？",
+suma1:"是的。我们使用清真食材，并严格保持食品卫生。",
+suma2:"价格从每份 Rp10.000 起，请查看菜单了解更多信息。",
+suma3:"可以。我们接受活动、公司、学校、聚会等团体订单。",
+suma4:"提供。您可以通过 WhatsApp 或配送服务下单。",
+suma5:"周一至周日 13:00–23:00。",
 },
 
 ja:{
@@ -180,6 +218,21 @@ feature1:"✔ 衛生的",
 galTitle:"ギャラリー",
 ctaTitle:"今日は豆腐ゲジョロットを楽しみませんか",
 ctaDesc:"下のボタンをクリックして、今すぐご注文ください",
+
+faqTitle:"よくある質問",
+faqSub:"よくあるご質問",
+faqDesc:"お客様からよくいただく質問と回答をご覧ください。",
+faq1:"パクデ・ブルンのタフ・ゲジョロットはハラールですか？",
+faq2:"1人前の価格はいくらですか？",
+faq3:"大量注文はできますか？",
+faq4:"配達サービスはありますか？",
+faq5:"営業時間を教えてください。",
+suma1:"はい。ハラール食材を使用し、衛生管理を徹底しています。",
+suma2:"1人前 Rp10,000からです。詳しくはメニューをご覧ください。",
+suma3::"はい。イベント、会社、学校、集まりなどのご注文を承ります。",
+suma4:"はい。WhatsAppまたは利用可能な配達サービスからご注文いただけます。",
+suma5::"毎日 13:00～23:00です。",
+
 
 },
 
@@ -223,6 +276,19 @@ galTitle:"갤러리",
 ctaTitle:"오늘 타후 게조롯을 맛볼 준비가 되셨나요?",
 ctaDesc:"아래 버튼을 눌러 지금 바로 주문하세요.",
 
+faqTitle:"자주 묻는 질문",
+fagSub:"고객이 자주 묻는 질문",
+faqDesc::"고객님들이 가장 자주 묻는 질문과 답변을 확인해 보세요.",
+faq1:"박데 부룽 타후 게조롯은 할랄 음식인가요?",
+faq2:"1인분 가격은 얼마인가요?",
+faq3:"대량 주문이 가능한가요?",
+faq4:"배달 서비스를 제공하나요?",
+faq5:"영업시간은 언제인가요?",
+suma1:"네. 할랄 재료를 사용하며 위생적으로 조리합니다.",
+suma2:"1인분 가격은 Rp10,000부터입니다. 자세한 내용은 메뉴를 확인하세요.",
+suma3:"네. 행사, 회사, 학교, 모임 등 단체 주문을 받습니다.",
+suma4:"네. WhatsApp 또는 이용 가능한 배달 서비스를 통해 주문하실 수 있습니다.",
+suma5:"매일 오후 1시부터 오후 11시까지 운영합니다.",
 },
 
 ar:{
@@ -266,6 +332,23 @@ aboutTitle:"من نحن",
 galTitle:"معرض الصور",
  ctaTitle:"هل أنت مستعد للاستمتاع بتاهو جيجروت اليوم؟",
  ctaDesc:"اضغط على الزر أدناه واطلب الآن",
+
+faqTitle:"الأسئلة الشائعة",
+    faqSub:"الأسئلة الأكثر شيوعًا",
+    faqDesc:"اعثر على إجابات لأكثر الأسئلة التي يطرحها عملاؤنا.",
+
+    faq1:"هل تاهو جيجروت باكدي بورونغ حلال؟",
+    faq2:"كم سعر الحصة الواحدة؟",
+    faq3:"هل يمكن طلب كميات كبيرة؟",
+    faq4:"هل تتوفر خدمة التوصيل؟",
+    faq5:"ما هي ساعات العمل؟",
+
+    suma1:"نعم، نستخدم مكونات حلال ونلتزم بأعلى معايير النظافة.",
+    suma2:"تبدأ الأسعار من 10,000 روبية للحصة. يرجى الاطلاع على القائمة لمزيد من التفاصيل.",
+    suma3:"نعم، نوفر طلبات المناسبات والمكاتب والمدارس والتجمعات وغيرها.",
+    suma4:"نعم، يمكنك الطلب عبر واتساب أو من خلال خدمات التوصيل المتاحة.",
+    suma5:"يوميًا من الساعة 13:00 إلى 23:00.",
+
 
 }
 
@@ -332,6 +415,20 @@ document.getElementById("galTitle").textContent=lang[language].galTitle;
 document.getElementById("ctaTitle").textContent=lang[language].ctaTitle;
 
 document.getElementById("ctaDesc").textContent=lang[language].ctaDesc;
+
+document.getElementById("faqTitle").textContent=lang[language].faqTitle;
+document.getElementById("faqSub").textContent=lang[language].faqSub;
+document.getElementById("faqDesc").textContent=lang[language].faqDesc;
+document.getElementById("faq1").textContent=lang[language].faq1;
+document.getElementById("faq2").textContent=lang[language].faq2;
+document.getElementById("faq3").textContent=lang[language].faq3;
+document.getElementById("faq4").textContent=lang[language].faq4;
+document.getElementById("faq5").textContent=lang[language].faq5;
+document.getElementById("suma1").textContent=lang[language].suma1;
+document.getElementById("suma2").textContent=lang[language].suma2;
+document.getElementById("suma3").textContent=lang[language].suma3;
+document.getElementById("suma4").textContent=lang[language].suma4;
+document.getElementById("suma5").textContent=lang[language].suma5;
 
 }
 
