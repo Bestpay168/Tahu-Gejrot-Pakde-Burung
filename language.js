@@ -8,7 +8,7 @@ langBtn.onclick=function(){
 
 }
 
-const lang = {
+const lang={
 
 id:{
     navHome:"Beranda",
