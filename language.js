@@ -66,18 +66,16 @@ suma3:"Bisa. Kami melayani pesanan untuk acara, kantor, sekolah, arisan, maupun 
 suma4:"Ya. Anda dapat memesan melalui WhatsApp atau layanan pengantaran yang tersedia.",
 suma5:"Senin–Minggu pukul 13.00–23.00 WIB.",
 
-orderTitle:"Form Pemesanan",
+    orderTitle:"Form Pemesanan",
     orderDesc:"Silakan isi data di bawah ini.",
-nameLabel:"Nama",
+    nameLabel:"Nama",
     phoneLabel:"Nomor WhatsApp",
     addressLabel:"Alamat",
     menuLabel:"Pilih Menu",
     spicyLabel:"Level Pedas",
     noteLabel:"Catatan",
     deliveryLabel:"Metode Pengiriman",
-    pickupLabel:"Ambil di Tempat",
-
-    paymentLabel:"Metode Pembayaran",
+    pickupLabel:"Ambil di Tempat",      paymentLabel:"Metode Pembayaran",
 
 },
 
