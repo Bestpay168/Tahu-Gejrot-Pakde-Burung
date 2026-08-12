@@ -113,7 +113,7 @@ HEADER
 }
 
 .navbar{
-    display:none;
+    display:flex;
     align-items:center;
     gap:30px;
 }
@@ -130,7 +130,7 @@ HEADER
 }
 
 .burger{
-    display:none;
+    display:block;
 
     width:45px;
     height:45px;
