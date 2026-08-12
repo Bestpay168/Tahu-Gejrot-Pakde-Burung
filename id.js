@@ -20,11 +20,11 @@ id:{
     navMaps:"Lokasi",
     navOrder:"Pesan",
     navFaq:"FAQ",
-    navKon:"Kontak",
+    navKon:"Kontak"
 
 
 
-},
+
 
 }
 
