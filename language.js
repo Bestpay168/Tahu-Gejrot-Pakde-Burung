@@ -70,7 +70,6 @@ ar:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
-},
 }
 };
 function setLang(language){
