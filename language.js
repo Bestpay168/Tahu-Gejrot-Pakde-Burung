@@ -40,6 +40,14 @@ btnOrder2:"Pesan",
 btnOrder3:"Pesan",
 btnOrder4:"Pesan", 
 
+aboutTitle:"Tentang Kami",
+aboutDesc:"TAHU GEJROT PAKDE BURUNG menghadirkan cita rasa khas Cirebon dengan kuah segar, pedas, manis, dan gurih. Menggunakan bahan berkualitas dan diracik setiap hari agar menghasilkan rasa yang konsisten.",
+
+feature1:"✔ Higienis",
+    feature2:"✔ Bumbu Khas",
+    feature3:"✔ Harga Bersahabat",
+    feature4:"✔ Pelayanan Cepat",
+
 },
 
 en:{
@@ -70,6 +78,8 @@ btnOrder1:"Order",
 btnOrder2:"Order",
 btnOrder3:"Order",
 btnOrder4:"Order", 
+
+
 
 },
 
@@ -102,6 +112,12 @@ btnOrder2:"订购",
 btnOrder3:"订购",
 btnOrder4:"订购", 
 
+aboutTitle:"关于我们",
+aboutDesc:"Pakde Burung 印尼豆腐采用井里汶（Cirebon）传统风味，搭配清爽、香辣、甜美、鲜香的特色酱汁。每天选用优质食材新鲜制作，确保始终保持稳定的美味。",
+feature1:"✔ 卫生安全",
+    feature2:"✔ 特色调味",
+    feature3:"✔ 价格实惠",
+    feature4:"✔ 服务快捷",
 },
 
 ja:{
@@ -132,6 +148,14 @@ btnOrder1:"注文",
 btnOrder2:"注文",
 btnOrder3:"注文",
 btnOrder4:"注文", 
+
+aboutTitle:"私たちについて",
+aboutDesc:"PAKDE BURUNG の豆腐ゲジョロットは、チルボン地方の伝統的な味を再現しています。さっぱりとして、辛さ・甘さ・旨味の調和が取れた特製ソースを使用し、毎日厳選した食材で調理することで、いつでも変わらない美味しさをお届けします。",
+feature1:"✔ 衛生的",
+    feature2:"✔ 特製の味付け",
+    feature3:"✔ お手頃価格",
+    feature4:"✔ 素早いサービス",
+
 
 },
 
@@ -164,6 +188,14 @@ btnOrder2:"주문",
 btnOrder3:"주문",
 btnOrder4:"주문", 
 
+aboutTitle:"회사 소개",
+aboutDesc:"PAKDE BURUNG 타후 게조롯은 인도네시아 치르본(Cirebon) 지역의 전통적인 맛을 담았습니다. 신선하고 매콤하며 달콤하고 감칠맛 나는 특제 소스를 사용하고, 매일 엄선한 재료로 조리하여 언제나 변함없는 맛을 제공합니다.",
+feature1:"✔ 위생적",
+    feature2:"✔ 특제 양념",
+    feature3:"✔ 합리적인 가격",
+    feature4:"✔ 빠른 서비스",
+
+
 },
 
 ar:{
@@ -195,6 +227,15 @@ btnOrder1:"اطلب الآن",
 btnOrder2:"اطلب الآن",
 btnOrder3:"اطلب الآن",
 btnOrder4:"اطلب الآن", 
+
+aboutTitle:"من نحن",
+    aboutDesc:"يقدم تاهو جيجروت باكدي بورونغ النكهة الأصلية لمدينة شيريبون بصلصة طازجة وحارة وحلوة ولذيذة، باستخدام مكونات عالية الجودة يتم تحضيرها يوميًا لضمان طعم ثابت.",
+
+    feature1:"✔ صحي ونظيف",
+    feature2:"✔ توابل أصلية",
+    feature3:"✔ أسعار مناسبة",
+    feature4:"✔ خدمة سريعة",
+
 
 
 }
