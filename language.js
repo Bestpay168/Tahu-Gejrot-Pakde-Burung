@@ -71,7 +71,9 @@ ar:{
     navKon:"Kontak",
 
 }
-};
+
+);
+
 function setLang(language){
 
 document.getElementById("navHome").textContent=lang[language].navHome;
