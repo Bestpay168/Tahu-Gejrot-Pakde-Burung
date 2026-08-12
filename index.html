@@ -469,7 +469,7 @@ GOOGLE MAPS
 
         <div class="section-title">
          
-             <h2 id="orderTitleForm"> Pemesanan</h2>
+             <h2 id="orderTitle">Form Pemesanan</h2>
       <p id="OrderDesc">Silakan pilih menu favorit Anda.</p>
         </div>
 
@@ -614,11 +614,11 @@ GOOGLE MAPS
 
                 <select id="deliveryMethod">
 
-                    <option value="delivery">
+                    <option value="delivery" id="deliveryLabel">
                         🚚 Diantar (+Rp10.000)
                     </option>
 
-                    <option value="pickup">
+                    <option value="pickup" id="pickupLabel">
                         🛍 Pickup (Gratis Ongkir)
                     </option>
 
@@ -689,7 +689,7 @@ GOOGLE MAPS
 
             <div class="form-group">
 
-                <label>Catatan</label>
+                <label id="noteLabel">Catatan</label>
 
                 <textarea
                     id="catatan"
@@ -702,7 +702,7 @@ GOOGLE MAPS
 
             <div class="form-group">
 
-                <label>Metode Pembayaran</label>
+                <label id="paymentLabel">Metode Pembayaran</label>
 
                 <select
                     id="payment"
