@@ -50,7 +50,7 @@ feature1:"✔ Higienis",
 
 galTitle:"GALERI"
 ctaTitle:"Siap Menikmati Tahu Gejrot Hari Ini?",
-ctaDesc:"Klik tombol di bawah dan pesan sekarang juga.",
+ctaDesc:"Klik tombol di bawah dan pesan sekarang juga",
 
 
 },
