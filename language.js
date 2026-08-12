@@ -19,6 +19,7 @@ id:{
     navOrder:"Pesan",
     navFaq:"FAQ",
     navKon:"Kontak",
+
 },
 
 en:{
