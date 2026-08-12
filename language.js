@@ -35,7 +35,10 @@ en:{
     navOrder:"Order",
     navFaq:"FAQ",
     navKon:"Kontak",
-
+    heroTitle:"PAKDE BURUNG TOFU GEJROT",
+    heroDesc:"Spicy, Fresh, and Delicious",
+    btnOrder:"Order Now",
+    btnMenu:"View Menu",
 },
 
 zh:{
@@ -47,6 +50,10 @@ zh:{
     navOrder:"订购",
     navFaq:"FAQ",
     navKon:"Kontak",
+    heroTitle:"Pakde Burung 印尼特色豆腐",
+    heroDesc:"香辣、新鲜、美味",
+    btnOrder:"立即订购",
+    btnMenu:"查看菜单",
 
 },
 
@@ -59,6 +66,10 @@ ja:{
     navOrder:"注文",
     navFaq:"FAQ",
     navKon:"Kontak",
+heroTitle:"パクデ・ブルン 豆腐ゲジョロット",
+heroDesc:"辛くて新鮮、とても美味しい",
+btnOrder:"今すぐ注文",
+btnMenu:"メニューを見る",
 
 },
 
@@ -71,6 +82,10 @@ ko:{
     navOrder:"주문",   
     navFaq:"FAQ",
     navKon:"Kontak",
+heroTitle:"박데 부룽 타후 게조롯",
+heroDesc:"매콤하고 신선하며 맛있습니다",
+btnOrder:"지금 주문하기",
+ btnMenu:"메뉴 보기",
 
 },
 
@@ -84,6 +99,10 @@ ar:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+    heroTitle:"تاهو جيجروت باكدي بورونغ",
+    heroDesc:"حار • طازج • لذيذ للغاية",
+    btnOrder:"اطلب الآن",
+    btnMenu:"عرض القائمة",
 
 }
 
@@ -99,6 +118,12 @@ document.getElementById("navMaps").textContent=lang[language].navMaps;
 document.getElementById("navOrder").textContent=lang[language].navOrder;
 document.getElementById("navFaq").textContent=lang[language].navFaq;
 document.getElementById("navKon").textContent=lang[language].navKon;
+
+document.getElementById("heroTitle").textContent=lang[language].heroTitle;
+document.getElementById("heroDesc").textContent=lang[language].heroDesc;
+document.getElementById("btnOrder").textContent=lang[language].btnOrder;
+document.getElementById("btnMenu").textContent=lang[language].btnMenu;
+
 
 }
 
