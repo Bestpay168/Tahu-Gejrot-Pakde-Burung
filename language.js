@@ -113,7 +113,7 @@ zh:{
     btnMenu:"查看菜单",
 
 menuTitle:"我们的菜单",
-menuDesc:"选择您喜欢的菜单。",
+menuDesc:"选择您喜欢的菜单",
 menuItem1:"原味豆腐盖浇",
 menuItem2:"特辣豆腐盖浇",
 menuItem3:"超大份豆腐盖浇",
@@ -156,7 +156,7 @@ btnOrder:"今すぐ注文",
 btnMenu:"メニューを見る",
 
 menuTitle:"メニュー",
-menuDesc:"お好きなメニューをお選びください。",
+menuDesc:"お好きなメニューをお選びください",
 menuItem1:"オリジナル豆腐ゲジョロット",
 menuItem2:"激辛豆腐ゲジョロット",
 menuItem3:"ジャンボ豆腐ゲジョロット",
@@ -287,6 +287,9 @@ document.getElementById("heroDesc").textContent=lang[language].heroDesc;
 document.getElementById("btnOrder").textContent=lang[language].btnOrder;
 document.getElementById("btnMenu").textContent=lang[language].btnMenu;
 
+document.getElementById("menuTitle").textContent=lang[language].menuTitle;
+
+document.getElementById("menuDesc").textContent=lang[language].menuDesc;
 
 document.getElementById("menuItem1").textContent=lang[language].menuItem1;
 
