@@ -51,6 +51,23 @@ ul{
 --gray:#777;
 --bg:#fafafa;
 
+--shadow:
+0 10px 30px rgba(0,0,0,.12);
+
+--radius:14px;
+
+}
+
+/* CONTAINER */
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
 /* ===================================
 HEADER
 =================================== */
