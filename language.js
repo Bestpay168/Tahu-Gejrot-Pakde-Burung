@@ -48,7 +48,7 @@ feature1:"✔ Higienis",
     feature3:"✔ Harga Bersahabat",
     feature4:"✔ Pelayanan Cepat",
 
-galTitle:"GALERI"
+galTitle:"GALERI",
 ctaTitle:"Siap Menikmati Tahu Gejrot Hari Ini?",
 ctaDesc:"Klik tombol di bawah dan pesan sekarang juga",
 
