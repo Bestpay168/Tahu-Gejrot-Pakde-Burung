@@ -20,6 +20,16 @@ id:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
+en:{
+    navHome:"Home",
+    navMenu:"Menu",
+    navAbout:"About",
+    navGal:"Gallery",
+    navMaps:"Location",
+    navOrder:"Order",
+    navFaq:"FAQ",
+    navKon:"Kontak",
+
 
 function setLang(language){
 
