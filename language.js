@@ -72,7 +72,7 @@ ar:{
 
 }
 
-);
+};
 
 function setLang(language){
 
