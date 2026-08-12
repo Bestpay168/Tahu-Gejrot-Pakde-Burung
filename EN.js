@@ -21,7 +21,7 @@ en:{
     navMaps:"Location",
     navOrder:"Order",
     navFaq:"FAQ",
-    navKon:"Kontak",
+    navKon:"Kontak"
 
 
 
