@@ -22,8 +22,8 @@ id:{
 
     heroTitle:"TAHU GEJROT PAKDE BURUNG",
     heroDesc:"Pedas, Segar, dan Bikin Nagih",
-    btnHero:"Pesan Sekarang",
-    btnMenu:"lihat Menu"
+    btnOrder:"Pesan Sekarang",
+    btnMenu:"lihat Menu",
 },
 
 en:{
