@@ -79,6 +79,13 @@ btnOrder2:"Order",
 btnOrder3:"Order",
 btnOrder4:"Order", 
 
+aboutTitle:"About Us",
+aboutDesc:"PAKDE BURUNG TAHU GEJROT brings the authentic taste of Cirebon with a fresh, spicy, sweet, and savory sauce. Made from high-quality ingredients and prepared fresh every day to ensure consistent flavor.",
+feature1:"✔ Hygienic",
+    feature2:"✔ Signature Seasoning",
+    feature3:"✔ Affordable Price",
+    feature4:"✔ Fast Service",
+
 
 
 },
@@ -282,5 +289,19 @@ document.getElementById("btnOrder2").textContent=lang[language].btnOrder2;
 document.getElementById("btnOrder3").textContent=lang[language].btnOrder3;
 
 document.getElementById("btnOrder4").textContent=lang[language].btnOrder4;
+
+document.getElementById("aboutTitle").textContent=lang[language].aboutTitle;
+
+document.getElementById("aboutDesc").textContent=lang[language].aboutDesc;
+
+document.getElementById("feature1").textContent = lang[language].feature1;
+
+document.getElementById("feature2").textContent = lang[language].feature2;
+
+document.getElementById("feature3").textContent = lang[language].feature3;
+
+document.getElementById("feature4").textContent = lang[language].feature4;
+
+
 }
 
