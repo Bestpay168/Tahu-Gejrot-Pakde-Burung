@@ -21,9 +21,9 @@ ja:{
     navMaps:"所在地",
     navOrder:"注文",
     navFaq:"FAQ",
-    navKon:"Kontak",
+    navKon:"Kontak"
 
-},
+
 
 
 }
