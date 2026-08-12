@@ -22,7 +22,7 @@ ar:{
     navMaps:"الموقع",
     navOrder:"اطلب الآن",
     navFaq:"FAQ",
-    navKon:"Kontak",
+    navKon:"Kontak"
 
 
 
