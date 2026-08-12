@@ -100,5 +100,5 @@ document.getElementById("navKon").textContent=lang[language].navKon;
 
 }
 
-}
+
 
