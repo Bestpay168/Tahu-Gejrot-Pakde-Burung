@@ -23,7 +23,7 @@ en:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
-},
+
 
 
 }
