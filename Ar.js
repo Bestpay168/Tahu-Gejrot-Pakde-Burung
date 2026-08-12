@@ -24,7 +24,7 @@ ar:{
     navFaq:"FAQ",
     navKon:"Kontak",
 
-},
+
 
 }
 
