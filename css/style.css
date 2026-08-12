@@ -238,7 +238,7 @@ z-index:1002;
 
 }
 .lang-menu.show{
-    display:block;
+    display:flex;
 }
 @media (max-width:767px){
 
@@ -255,7 +255,7 @@ z-index:1002;
     }
 
     .burger{
-        display:flex;
+        display:block;
         z-index:999;
     }
 
