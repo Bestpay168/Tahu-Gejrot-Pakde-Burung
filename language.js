@@ -598,7 +598,7 @@ document.getElementById("cartSubtotal").textContent = lang[language].cartSubtota
 document.getElementById("shipping").textContent = lang[language].shipping;
 document.getElementById("cartTotal").textContent = lang[language].cartTotal;
 
-if (document.getElementById("cartEmpty").textContent.trim() === "Keranjang masih kosong.") {
+if (document.getElementById("cart").textContent.trim() === "Keranjang masih kosong.") {
     document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
 
 }
