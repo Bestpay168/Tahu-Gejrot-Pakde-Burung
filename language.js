@@ -85,9 +85,9 @@ mapsDesc:"Kunjungi TAHU GEJROT PAKDE BURUNG atau pesan melalui WhatsApp.",
 
 cartTitle:"🛒 Keranjang Belanja",
 cartEmpty:"Keranjang masih kosong.",
-subtotal:"Subtotal",
+cartSubtotal:"Subtotal",
 shipping:"Ongkir",
-total:"Total",
+cartTotal:"Total",
 },
 
 en:{
@@ -163,9 +163,9 @@ mapsDesc:"Visit PAKDE BURUNG TAHU GEJROT or order via WhatsApp.",
 
 cartTitle:"🛒 Shopping Cart",
 cartEmpty:"Your cart is empty.",
-subtotal:"Subtotal",
+cartSubtotal:"Subtotal",
 shipping:"Shipping",
-total:"Total",
+cartTotal:"Total",
 },
 
 zh:{
@@ -243,9 +243,9 @@ mapsDesc:"欢迎到 Pakde Burung 印尼特色豆腐，或通过 WhatsApp 下单�
 
 cartTitle:"🛒 购物车",
 cartEmpty:"购物车还是空的。",
-subtotal:"小计",
+cartSubtotal:"小计",
 shipping:"配送费",
-total:"总计",
+cartTotal:"总计",
 },
 
 ja:{
@@ -323,9 +323,9 @@ mapsDesc:"PAKDE BURUNG 豆腐ゲジョロットへお越しいただくか、Wha
 
 cartTitle:"🛒 ショッピングカート",
 cartEmpty:"カートは空です。",
-subtotal:"小計",
+cartSubtotal:"小計",
 shipping:"配送料",
-total:"合計",
+cartTotal:"合計",
 
 },
 
@@ -404,9 +404,9 @@ mapsDesc:"박데 부룽 타후 게조롯을 방문하시거나 WhatsApp으로 �
 
 cartTitle:"🛒 장바구니",
 cartEmpty:"장바구니가 비어 있습니다.",
-subtotal:"소계",
+cartSubtotal:"소계",
 shipping:"배송비",
-total:"합계",
+cartTotal:"합계",
 },
 
 ar:{
@@ -488,9 +488,9 @@ mapsDesc:"قم بزيارة تاهو جيجروت باكدي بورونغ أو �
 
 cartTitle:"🛒 سلة التسوق",
 cartEmpty:"سلة التسوق فارغة.",
-subtotal:"المجموع الفرعي",
+cartSubtotal:"المجموع الفرعي",
 shipping:"رسوم التوصيل",
-total:"الإجمالي",
+cartTotal:"الإجمالي",
 
 
 }
