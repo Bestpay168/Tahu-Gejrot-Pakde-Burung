@@ -51,6 +51,7 @@ feature1:"✔ Higienis",
 galTitle:"GALERI",
 ctaTitle:"Siap Menikmati Tahu Gejrot Hari Ini?",
 ctaDesc:"Klik tombol di bawah dan pesan sekarang juga",
+waButton:"Pesan via WhatsApp",
 
 faqTitle:"FAQ",
 faqSub:"Pertanyaan yang Sering Diajukan",
@@ -122,7 +123,7 @@ feature1:"✔ Hygienic",
 galTitle:"GALLERY",
 ctaTitle:"Ready to Enjoy Tahu Gejrot Today?",
 ctaDesc:"Click the button below and order now",
-
+waButton:"Order via WhatsApp",
 faqTitle:"FAQ",
 faqSub:"Frequently Asked Questions",
 faqDesc:"Find answers to the questions our customers ask most often.",
@@ -194,6 +195,7 @@ feature1:"✔ 卫生安全",
 galTitle:"图库",
 ctaTitle:"准备好今天品尝印尼豆腐了吗？",
 ctaDesc:"点击下方按钮，立即下单。",
+waButton:"通过 WhatsApp 下单",
 
 faqTitle:"常见问题",
 faqSub:"常见问题解答",
@@ -267,6 +269,7 @@ feature1:"✔ 衛生的",
 galTitle:"ギャラリー",
 ctaTitle:"今日は豆腐ゲジョロットを楽しみませんか",
 ctaDesc:"下のボタンをクリックして、今すぐご注文ください",
+waButton:"WhatsAppで注文",
 
 faqTitle:"よくある質問",
 faqSub:"よくあるご質問",
@@ -341,7 +344,7 @@ feature1:"✔ 위생적",
 galTitle:"갤러리",
 ctaTitle:"오늘 타후 게조롯을 맛볼 준비가 되셨나요?",
 ctaDesc:"아래 버튼을 눌러 지금 바로 주문하세요.",
-
+waButton:"WhatsApp으로 주문",
 faqTitle:"자주 묻는 질문",
 faqSub:"고객이 자주 묻는 질문",
 faqDesc:"고객님들이 가장 자주 묻는 질문과 답변을 확인해 보세요.",
@@ -417,6 +420,7 @@ aboutTitle:"من نحن",
 galTitle:"معرض الصور",
  ctaTitle:"هل أنت مستعد للاستمتاع بتاهو جيجروت اليوم؟",
  ctaDesc:"اضغط على الزر أدناه واطلب الآن",
+waButton:"اطلب عبر واتساب",
 
 faqTitle:"الأسئلة الشائعة",
     faqSub:"الأسئلة الأكثر شيوعًا",
@@ -517,6 +521,8 @@ document.getElementById("galTitle").textContent=lang[language].galTitle;
 document.getElementById("ctaTitle").textContent=lang[language].ctaTitle;
 
 document.getElementById("ctaDesc").textContent=lang[language].ctaDesc;
+
+document.getElementById("waButton").textContent=lang[language].waButton;
 
 document.getElementById("faqTitle").textContent=lang[language].faqTitle;
 document.getElementById("faqSub").textContent=lang[language].faqSub;
