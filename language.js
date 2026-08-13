@@ -451,9 +451,7 @@ orderTitle:"نموذج الطلب",
 mapsTitle:"الموقع",
 mapsSub:"اعثر علينا",
 mapsDesc:"قم بزيارة تاهو جيجروت باكدي بورونغ أو اطلب عبر واتساب.",
-document.getElementById("mapsTitle").textContent = lang[language].mapsTitle;
-document.getElementById("mapsSub").textContent = lang[language].mapsSub;
-document.getElementById("mapsDesc").textContent = lang[language].mapsDesc;
+
 }
 
 };
@@ -546,6 +544,10 @@ document.getElementById("deliveryLabel").textContent = lang[language].deliveryLa
 document.getElementById("pickupLabel").textContent = lang[language].pickupLabel;
 document.getElementById("paymentLabel").textContent = lang[language].paymentLabel;
 
+
+document.getElementById("mapsTitle").textContent = lang[language].mapsTitle;
+document.getElementById("mapsSub").textContent = lang[language].mapsSub;
+document.getElementById("mapsDesc").textContent = lang[language].mapsDesc;
 
 
 }
