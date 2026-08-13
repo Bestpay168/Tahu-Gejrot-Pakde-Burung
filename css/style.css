@@ -232,11 +232,7 @@ z-index:1002;
 
 }
 
-.lang-menu button:hover{
 
-    background:#ff9800;
-
-}
 .lang-menu.show{
     display:block;
 }
