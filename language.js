@@ -594,6 +594,10 @@ document.getElementById("mapsDesc").textContent = lang[language].mapsDesc;
 
 document.getElementById("cartTitle").textContent = lang[language].cartTitle;
 
+document.getElementById("cartSubtotal").textContent = lang[language].cartSubtotal;
+document.getElementById("shipping").textContent = lang[language].shipping;
+document.getElementById("cartTotal").textContent = lang[language].cartTotal;
+
 if (document.getElementById("cartEmpty").textContent.trim() === "Keranjang masih kosong.") {
     document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
 
