@@ -82,6 +82,12 @@ suma5:"Senin–Minggu pukul 13.00–23.00 WIB.",
 mapsTitle:"Lokasi",
 mapsSub:"Temukan Kami",
 mapsDesc:"Kunjungi TAHU GEJROT PAKDE BURUNG atau pesan melalui WhatsApp.",
+
+cartTitle:"🛒 Keranjang Belanja",
+cartEmpty:"Keranjang masih kosong.",
+subtotal:"Subtotal",
+shipping:"Ongkir",
+total:"Total",
 },
 
 en:{
@@ -154,6 +160,12 @@ paymentLabel:"Payment Method",
 mapsTitle:"Location",
 mapsSub:"Find Us",
 mapsDesc:"Visit PAKDE BURUNG TAHU GEJROT or order via WhatsApp.",
+
+cartTitle:"🛒 Shopping Cart",
+cartEmpty:"Your cart is empty.",
+subtotal:"Subtotal",
+shipping:"Shipping",
+total:"Total",
 },
 
 zh:{
@@ -228,6 +240,12 @@ orderTitle:"订单表单",
 mapsTitle:"位置",
 mapsSub:"找到我们",
 mapsDesc:"欢迎到 Pakde Burung 印尼特色豆腐，或通过 WhatsApp 下单。",
+
+cartTitle:"🛒 购物车",
+cartEmpty:"购物车还是空的。",
+subtotal:"小计",
+shipping:"配送费",
+total:"总计",
 },
 
 ja:{
@@ -303,6 +321,12 @@ mapsTitle:"所在地",
 mapsSub:"店舗はこちら",
 mapsDesc:"PAKDE BURUNG 豆腐ゲジョロットへお越しいただくか、WhatsAppからご注文ください。",
 
+cartTitle:"🛒 ショッピングカート",
+cartEmpty:"カートは空です。",
+subtotal:"小計",
+shipping:"配送料",
+total:"合計",
+
 },
 
 ko:{
@@ -377,6 +401,12 @@ mapsTitle:"위치",
 mapsSub:"오시는 길",
 mapsDesc:"박데 부룽 타후 게조롯을 방문하시거나 WhatsApp으로 주문하세요.",
 
+
+cartTitle:"🛒 장바구니",
+cartEmpty:"장바구니가 비어 있습니다.",
+subtotal:"소계",
+shipping:"배송비",
+total:"합계",
 },
 
 ar:{
@@ -455,6 +485,13 @@ orderTitle:"نموذج الطلب",
 mapsTitle:"الموقع",
 mapsSub:"اعثر علينا",
 mapsDesc:"قم بزيارة تاهو جيجروت باكدي بورونغ أو اطلب عبر واتساب.",
+
+cartTitle:"🛒 سلة التسوق",
+cartEmpty:"سلة التسوق فارغة.",
+subtotal:"المجموع الفرعي",
+shipping:"رسوم التوصيل",
+total:"الإجمالي",
+
 
 }
 
@@ -555,6 +592,10 @@ document.getElementById("mapsTitle").textContent = lang[language].mapsTitle;
 document.getElementById("mapsSub").textContent = lang[language].mapsSub;
 document.getElementById("mapsDesc").textContent = lang[language].mapsDesc;
 
+document.getElementById("cartTitle").textContent = lang[language].cartTitle;
+
+if (document.getElementById("cartEmpty").textContent.trim() === "Keranjang masih kosong.") {
+    document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
 
 }
 
