@@ -77,6 +77,10 @@ suma5:"Senin–Minggu pukul 13.00–23.00 WIB.",
     deliveryLabel:"Metode Pengiriman",
     pickupLabel:"Ambil di Tempat",      paymentLabel:"Metode Pembayaran",
 
+
+mapsTitle:"Lokasi",
+mapsSub:"Temukan Kami",
+mapsDesc:"Kunjungi TAHU GEJROT PAKDE BURUNG atau pesan melalui WhatsApp.",
 },
 
 en:{
@@ -145,6 +149,10 @@ orderTitle:"Order Form",
     deliveryLabel:"Delivery Method",
     pickupLabel:"Pickup",
 paymentLabel:"Payment Method",
+
+mapsTitle:"Location",
+mapsSub:"Find Us",
+mapsDesc:"Visit PAKDE BURUNG TAHU GEJROT or order via WhatsApp.",
 },
 
 zh:{
@@ -214,6 +222,10 @@ orderTitle:"订单表单",
     pickupLabel:"到店自取",
 
     paymentLabel:"付款方式",
+
+mapsTitle:"位置",
+mapsSub:"找到我们",
+mapsDesc:"欢迎到 Pakde Burung 印尼特色豆腐，或通过 WhatsApp 下单。",
 },
 
 ja:{
@@ -284,6 +296,10 @@ orderTitle:"注文フォーム",
     
       paymentLabel:"支払い方法",
 
+mapsTitle:"所在地",
+mapsSub:"店舗はこちら",
+mapsDesc:"PAKDE BURUNG 豆腐ゲジョロットへお越しいただくか、WhatsAppからご注文ください。",
+
 },
 
 ko:{
@@ -353,6 +369,11 @@ orderTitle:"주문 양식",
     pickupLabel:"매장 수령",
 
     paymentLabel:"결제 방법",
+
+mapsTitle:"위치",
+mapsSub:"오시는 길",
+mapsDesc:"박데 부룽 타후 게조롯을 방문하시거나 WhatsApp으로 주문하세요.",
+
 },
 
 ar:{
@@ -426,6 +447,13 @@ orderTitle:"نموذج الطلب",
     pickupLabel:"الاستلام من المتجر",
     paymentLabel:"طريقة الدفع",
 
+
+mapsTitle:"الموقع",
+mapsSub:"اعثر علينا",
+mapsDesc:"قم بزيارة تاهو جيجروت باكدي بورونغ أو اطلب عبر واتساب.",
+document.getElementById("mapsTitle").textContent = lang[language].mapsTitle;
+document.getElementById("mapsSub").textContent = lang[language].mapsSub;
+document.getElementById("mapsDesc").textContent = lang[language].mapsDesc;
 }
 
 };
