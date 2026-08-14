@@ -88,6 +88,9 @@ cartEmpty:"Keranjang masih kosong.",
 cartSubtotal:"Subtotal",
 shipping:"Ongkir",
 cartTotal:"Total",
+
+pickupMethodLabel:"Metode Pengambilan",
+
 },
 
 en:{
@@ -166,6 +169,9 @@ cartEmpty:"Your cart is empty.",
 cartSubtotal:"Subtotal",
 shipping:"Shipping",
 cartTotal:"Total",
+
+
+ pickupMethodLabel:"Pickup Method",
 },
 
 zh:{
@@ -246,6 +252,9 @@ cartEmpty:"购物车还是空的。",
 cartSubtotal:"小计",
 shipping:"配送费",
 cartTotal:"总计",
+
+pickupMethodLabel:"取货方式",
+
 },
 
 ja:{
@@ -327,6 +336,9 @@ cartSubtotal:"小計",
 shipping:"配送料",
 cartTotal:"合計",
 
+
+pickupMethodLabel:"受け取り方法",
+
 },
 
 ko:{
@@ -407,6 +419,9 @@ cartEmpty:"장바구니가 비어 있습니다.",
 cartSubtotal:"소계",
 shipping:"배송비",
 cartTotal:"합계",
+
+ pickupMethodLabel:"수령 방법",
+
 },
 
 ar:{
@@ -491,6 +506,9 @@ cartEmpty:"سلة التسوق فارغة.",
 cartSubtotal:"المجموع الفرعي",
 shipping:"رسوم التوصيل",
 cartTotal:"الإجمالي",
+
+
+pickupMethodLabel:"طريقة الاستلام",
 
 
 }
@@ -600,6 +618,9 @@ document.getElementById("cartTotal").textContent = lang[language].cartTotal;
 
 if (document.getElementById("cart").textContent.trim() === "Keranjang masih kosong.") {
     document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
+
+
+document.getElementById("pickupMethodLabel").textContent =lang[language].pickupMethodLabel;
 
 }
 
