@@ -91,6 +91,8 @@ cartTotal:"Total",
 
 pickupMethodLabel:"Metode Pengambilan",
 
+paymentOption:"-- Pilih Metode Pembayaran --",
+
 },
 
 en:{
@@ -172,6 +174,9 @@ cartTotal:"Total",
 
 
  pickupMethodLabel:"Pickup Method",
+
+  paymentOption:"-- Select Payment Method --",
+
 },
 
 zh:{
@@ -254,6 +259,9 @@ shipping:"配送费",
 cartTotal:"总计",
 
 pickupMethodLabel:"取货方式",
+
+paymentOption:"-- 请选择付款方式 --",
+
 
 },
 
@@ -339,6 +347,9 @@ cartTotal:"合計",
 
 pickupMethodLabel:"受け取り方法",
 
+  paymentOption:"-- お支払い方法を選択してください --",
+
+
 },
 
 ko:{
@@ -421,6 +432,9 @@ shipping:"배송비",
 cartTotal:"합계",
 
  pickupMethodLabel:"수령 방법",
+
+
+paymentOption:"-- 결제 방법을 선택하세요 --",
 
 },
 
@@ -510,6 +524,7 @@ cartTotal:"الإجمالي",
 
 pickupMethodLabel:"طريقة الاستلام",
 
+paymentOption:"-- اختر طريقة الدفع --",
 
 }
 
@@ -617,6 +632,8 @@ document.getElementById("shipping").textContent = lang[language].shipping;
 document.getElementById("cartTotal").textContent = lang[language].cartTotal;
 
 document.getElementById("pickupMethodLabel").textContent =lang[language].pickupMethodLabel;
+
+document.getElementById("paymentOption").textContent =lang[language].paymentOption;
 
 
 if (document.getElementById("cart").textContent.trim() === "Keranjang masih kosong.") {
