@@ -338,6 +338,37 @@ background:url("../banner.png") center center/cover no-repeat;
 
 }
 
+/* Slide */
+
+.hero-slider{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.slide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+/* Slide aktif */
+
+.slide.active{
+    opacity:1;
+    z-index:1;
+}
+
 /* Overlay */
 
 .overlay{
@@ -465,6 +496,17 @@ transform:translateY(-5px);
 
 }
 
+.slide:nth-child(1){
+    background-image:url("../hero.jpg");
+}
+
+.slide:nth-child(2){
+    background-image:url("../hero1.jpg");
+}
+
+.slide:nth-child(3){
+    background-image:url("../hero3.jpg");
+}
 /* SCROLL INDICATOR */
 
 .scroll-down{
