@@ -731,3 +731,5 @@ const currentLang = document.getElementById("currentLang");
     }
 
 }
+
+}
