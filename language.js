@@ -58,6 +58,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const langInfo = {
+
+    id: {
+        code: "ID",
+        flag: "🇮🇩"
+    },
+
+    en: {
+        code: "EN",
+        flag: "🇺🇸"
+    },
+
+    zh: {
+        code: "ZH",
+        flag: "🇨🇳"
+    },
+
+    ja: {
+        code: "JA",
+        flag: "🇯🇵"
+    },
+
+    ko: {
+        code: "KO",
+        flag: "🇰🇷"
+    },
+
+    ar: {
+        code: "AR",
+        flag: "🇸🇦"
+    }
+
+};
+
 const lang={
 
 id:{
@@ -690,6 +724,7 @@ if (document.getElementById("cart").textContent.trim() === "Keranjang masih koso
     document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
 
 
+currentLang.textContent = langInfo[language].code;
 
 }
 
