@@ -1512,3 +1512,5 @@ Terima kasih 🙏
     );
 
 }
+
+alert("script.js berjalan");
