@@ -724,8 +724,10 @@ if (document.getElementById("cart").textContent.trim() === "Keranjang masih koso
     document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
 
 
-currentLang.textContent = langInfo[language].code;
+const currentLang = document.getElementById("currentLang");
 
-}
+    if (currentLang && langInfo[language]) {
+        currentLang.textContent = langInfo[language].code;
+    }
 
 }
