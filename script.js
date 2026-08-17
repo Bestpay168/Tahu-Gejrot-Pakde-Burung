@@ -556,7 +556,7 @@ if(heroContent){
 
     });
 
-    heroContent.appendChild(dotWrapper);
+    heroContentSlider.appendChild(dotWrapper);
 
 }
 
