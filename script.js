@@ -524,60 +524,6 @@ setInterval(()=>{
    HERO DOT INDICATOR
 ====================================== */
 
-const heroContent = document.querySelector(".hero-content");
-
-if(heroContent){
-
-    const dotWrapper = document.createElement("div");
-
-    dotWrapper.className = "hero-dots";
-
-    heroImages.forEach((img,index)=>{
-
-        const dot = document.createElement("span");
-
-        dot.className = "hero-dot";
-
-        if(index===0){
-
-            dot.classList.add("active");
-
-        }
-
-        dot.onclick = ()=>{
-
-            currentHero=index;
-
-            updateHero();
-
-        }
-
-        dotWrapper.appendChild(dot);
-
-    });
-
-    heroContentSlider.appendChild(dotWrapper);
-
-}
-
-function updateHero(){
-
-    changeHero(currentHero);
-
-    document
-    .querySelectorAll(".hero-dot")
-    .forEach((dot,index)=>{
-
-        dot.classList.toggle(
-            "active",
-            index===currentHero
-        );
-
-    });
-
-}
-
-
 /* ======================================
    NEXT PREVIOUS
 ====================================== */
