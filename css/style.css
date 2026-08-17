@@ -239,7 +239,7 @@ z-index:1002;
 @media (max-width:767px){
 
     .logo{
-        gap:8px:
+        gap:8px;
     }
 
     .logo img{
@@ -275,21 +275,21 @@ z-index:1002;
     }
 
 
-.language-menu{
+.lang-menu{
     width:50%;
     margin-top:25px;
     padding-top:20px;
     border-top:1px solid rgba(255,255,255,.2);
 }
 
-.language-menu p{
+.lang-menu p{
     color:#bbb;
     font-size:14px;
     margin-bottom:12px;
     padding-left:20px;
 }
 
-.language-menu button{
+.lang-menu button{
     width:40%;
     margin:8px auto;
     display:block;
@@ -306,7 +306,7 @@ z-index:1002;
     transition:.3s;
 }
 
-.language-menu button:hover{
+.lang-menu button:hover{
     background:#ff9800;
 }
 
@@ -383,7 +383,7 @@ width:100%;
 
 height:100%;
 
-background:tranparent;
+background:transparent;
 }
 
 /* HERO CONTENT */
