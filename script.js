@@ -888,6 +888,45 @@ copyright.innerHTML=
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    console.log("ORDER SYSTEM AKTIF");
+
+
+    /* ======================================
+       TOMBOL + DAN -
+    ====================================== */
+
+    document.querySelectorAll(".menu-item").forEach(function (item) {
+
+const plus = item.querySelector(".plus");
+const minus =item.querySelector(".minus");
+const qty = item.querySelector(".qty");
+
+        if (!plus || !minus || !qty) {
+            console.error("Elemen quantity tidak lengkap:", item);
+            return;
+        }
+
+
+        plus.addEventListener("click", function () {
+
+            let jumlah = parseInt(qty.value) || 0;
+
+            qty.value = jumlah + 1;
+
+            updateCart();
+
+        });
+
+
+        minus.addEventListener("click", function () {
+
+            let jumlah = parseInt(qty.value) || 0;
+
+            if (jumlah > 0) {
+
+                qty.value =
+document.addEventListener("DOMContentLoaded", function () {
+
     // Event tombol + dan -
     document.querySelectorAll(".menu-item").forEach(function (item) {
 
