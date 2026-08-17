@@ -1,12 +1,62 @@
-const langBtn=document.getElementById("langBtn");
 
-const langMenu=document.querySelector(".lang-menu");
 
-langBtn.onclick=function(){
+document.addEventListener("DOMContentLoaded", function () {
 
-    langMenu.classList.toggle("show");
+    const langBtn = document.getElementById("langBtn");
+    const langMenu = document.querySelector(".lang-menu");
 
-}
+    /* BUKA / TUTUP MENU */
+
+    if (langBtn && langMenu) {
+
+        langBtn.addEventListener("click", function (e) {
+
+            e.stopPropagation();
+
+            langMenu.classList.toggle("show");
+
+        });
+
+    }
+
+
+    /* PILIH BAHASA */
+
+    document.querySelectorAll(".lang-menu [data-lang]")
+    .forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const language = this.dataset.lang;
+
+            console.log("Bahasa dipilih:", language);
+
+            setLang(language);
+
+        });
+
+    });
+
+
+    /* TUTUP MENU */
+
+    document.addEventListener("click", function (e) {
+
+        if (
+            langMenu &&
+            langBtn &&
+            !langMenu.contains(e.target) &&
+            !langBtn.contains(e.target)
+        ) {
+
+            langMenu.classList.remove("show");
+
+        }
+
+    });
+
+});
+
 
 const lang={
 
