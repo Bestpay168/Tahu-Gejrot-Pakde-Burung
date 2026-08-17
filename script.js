@@ -1513,4 +1513,3 @@ Terima kasih 🙏
 
 }
 
-alert("SCRIPT.JS BERJALAN");
