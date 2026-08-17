@@ -881,11 +881,6 @@ copyright.innerHTML=
 }
 
 
-/* ==========================================
-   TAHU GEJROT PAKDE BURUNG
-   script.js
-========================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("ORDER SYSTEM AKTIF");
@@ -897,15 +892,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".menu-item").forEach(function (item) {
 
-const plus = item.querySelector(".plus");
-const minus =item.querySelector(".minus");
-const qty = item.querySelector(".qty");
+        const plus = item.querySelector(".plus");
+        const minus = item.querySelector(".minus");
+        const qty = item.querySelector(".qty");
 
         if (!plus || !minus || !qty) {
             console.error("Elemen quantity tidak lengkap:", item);
             return;
         }
 
+
+        /* TOMBOL + */
 
         plus.addEventListener("click", function () {
 
@@ -918,55 +915,88 @@ const qty = item.querySelector(".qty");
         });
 
 
+        /* TOMBOL - */
+
         minus.addEventListener("click", function () {
 
             let jumlah = parseInt(qty.value) || 0;
 
             if (jumlah > 0) {
 
-                qty.value =
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Event tombol + dan -
-    document.querySelectorAll(".menu-item").forEach(function (item) {
-
-        const plus = item.querySelector(".plus");
-        const minus = item.querySelector(".minus");
-        const qty = item.querySelector(".qty");
-
-        plus.addEventListener("click", function () {
-            qty.value = parseInt(qty.value) + 1;
-            updateCart();
-        });
-
-        minus.addEventListener("click", function () {
-
-            let jumlah = parseInt(qty.value);
-
-            if (jumlah > 0) {
                 qty.value = jumlah - 1;
+
                 updateCart();
+
             }
 
         });
 
     });
 
-    // Delivery / Pickup
-    document.getElementById("deliveryMethod")
-        .addEventListener("change", updateCart);
 
-    // Submit Form
-    document.getElementById("orderForm")
-        .addEventListener("submit", function (e) {
+    /* ======================================
+       DELIVERY / PICKUP
+    ====================================== */
 
-            e.preventDefault();
+    const deliveryMethod =
+        document.getElementById("deliveryMethod");
 
-            kirimWhatsApp();
+    if (deliveryMethod) {
 
-        });
+        deliveryMethod.addEventListener(
+            "change",
+            updateCart
+        );
+
+    }
+
+
+    /* ======================================
+       PAYMENT
+    ====================================== */
+
+    const payment =
+        document.getElementById("payment");
+
+    if (payment) {
+
+        payment.addEventListener(
+            "change",
+            showPaymentInfo
+        );
+
+    }
+
+
+    /* ======================================
+       SUBMIT FORM
+    ====================================== */
+
+    const orderForm =
+        document.getElementById("orderForm");
+
+    if (orderForm) {
+
+        orderForm.addEventListener(
+            "submit",
+            function (e) {
+
+                e.preventDefault();
+
+                kirimWhatsApp();
+
+            }
+        );
+
+    }
+
+
+    /* ======================================
+       UPDATE SHOPPING CART
+    ====================================== */
 
     updateCart();
+
 
 });
 
@@ -981,60 +1011,138 @@ function updateCart() {
 
     let cartHTML = "";
 
+
     document.querySelectorAll(".menu-item").forEach(function (item) {
 
-        const nama = item.dataset.name;
+        const nama =
+            item.dataset.name;
 
-        const harga = parseInt(item.dataset.price);
+        const harga =
+            parseInt(item.dataset.price) || 0;
 
-        const qty = parseInt(item.querySelector(".qty").value);
+        const qtyElement =
+            item.querySelector(".qty");
+
+        const qty =
+            parseInt(qtyElement.value) || 0;
+
 
         if (qty > 0) {
 
-            const totalItem = harga * qty;
+            const totalItem =
+                harga * qty;
 
             subtotal += totalItem;
 
+
             cartHTML += `
-            <div class="cart-item">
-                ${nama}
-                <strong>x${qty}</strong>
-                <span>
-                Rp${totalItem.toLocaleString("id-ID")}
-                </span>
-            </div>
+                <div class="cart-item">
+
+                    <span>
+                        ${nama}
+                    </span>
+
+                    <strong>
+                        x${qty}
+                    </strong>
+
+                    <span>
+                        Rp${totalItem.toLocaleString("id-ID")}
+                    </span>
+
+                </div>
             `;
 
         }
 
     });
 
+
+    /* ======================================
+       JIKA CART KOSONG
+    ====================================== */
+
     if (cartHTML === "") {
 
-        cartHTML = "<p>Keranjang masih kosong.</p>";
+        cartHTML =
+            "<p>Keranjang masih kosong.</p>";
 
     }
 
-    document.getElementById("cart").innerHTML = cartHTML;
+
+    const cart =
+        document.getElementById("cart");
+
+    if (cart) {
+
+        cart.innerHTML = cartHTML;
+
+    }
+
+
+    /* ======================================
+       ONGKIR
+    ====================================== */
 
     let ongkir = 10000;
 
-    if (document.getElementById("deliveryMethod").value === "pickup") {
+    const deliveryMethod =
+        document.getElementById("deliveryMethod");
+
+
+    if (
+        deliveryMethod &&
+        deliveryMethod.value === "pickup"
+    ) {
 
         ongkir = 0;
 
     }
 
-    const total = subtotal + ongkir;
 
-    document.getElementById("subtotal").textContent =
-        "Rp" + subtotal.toLocaleString("id-ID");
+    /* ======================================
+       TOTAL
+    ====================================== */
 
-    document.getElementById("ongkir").textContent =
-        "Rp" + ongkir.toLocaleString("id-ID");
+    const total =
+        subtotal + ongkir;
 
-    document.getElementById("total").textContent =
-        "Rp" + total.toLocaleString("id-ID");
+
+    const subtotalElement =
+        document.getElementById("subtotal");
+
+    const ongkirElement =
+        document.getElementById("ongkir");
+
+    const totalElement =
+        document.getElementById("total");
+
+
+    if (subtotalElement) {
+
+        subtotalElement.textContent =
+            "Rp" +
+            subtotal.toLocaleString("id-ID");
+
+    }
+
+
+    if (ongkirElement) {
+
+        ongkirElement.textContent =
+            "Rp" +
+            ongkir.toLocaleString("id-ID");
+
+    }
+
+
+    if (totalElement) {
+
+        totalElement.textContent =
+            "Rp" +
+            total.toLocaleString("id-ID");
+
+    }
 
 }
 
@@ -1045,64 +1153,118 @@ function updateCart() {
 
 function showPaymentInfo() {
 
-    const payment = document.getElementById("payment");
+    const payment =
+        document.getElementById("payment");
 
-    const info = document.getElementById("payment-info");
+    const info =
+        document.getElementById("payment-info");
+
+
+    if (!payment || !info) {
+        return;
+    }
+
 
     switch (payment.value) {
+
+
+        /* COD */
 
         case "cod":
 
             info.innerHTML = `
-            <h4>💵 COD</h4>
-            <p>Bayar saat pesanan diterima.</p>
+                <h4>💵 COD</h4>
+                <p>
+                    Bayar saat pesanan diterima.
+                </p>
             `;
+
             break;
+
+
+        /* QRIS */
 
         case "qris":
 
             info.innerHTML = `
-            <h4>📱 QRIS</h4>
-            <img src="qris.png" width="220">
+                <h4>📱 QRIS</h4>
+
+                <img
+                    src="qris.png"
+                    width="220"
+                    alt="QRIS Tahu Gejrot Pakde Burung">
             `;
+
             break;
+
+
+        /* DANA */
 
         case "dana":
 
             info.innerHTML = `
-            <h4>🔵 DANA</h4>
-            <strong>089614001997</strong>
+                <h4>🔵 DANA</h4>
+
+                <strong>
+                    089614001997
+                </strong>
             `;
+
             break;
+
+
+        /* GOPAY */
 
         case "gopay":
 
             info.innerHTML = `
-            <h4>🟢 GoPay</h4>
-            <strong>089614001997</strong>
+                <h4>🟢 GoPay</h4>
+
+                <strong>
+                    089614001997
+                </strong>
             `;
+
             break;
+
+
+        /* OVO */
 
         case "ovo":
 
             info.innerHTML = `
-            <h4>🟣 OVO</h4>
-            <strong>089614001997</strong>
+                <h4>🟣 OVO</h4>
+
+                <strong>
+                    089614001997
+                </strong>
             `;
+
             break;
+
+
+        /* TRANSFER */
 
         case "transfer":
 
             info.innerHTML = `
-            <h4>🏦 Transfer Bank</h4>
+                <h4>🏦 Transfer Bank</h4>
 
-            <p>BCA</p>
+                <p>BCA</p>
 
-            <strong>5491006693</strong>
+                <strong>
+                    5491006693
+                </strong>
 
-            <p>a.n. Dwi Widianingtias</p>
+                <p>
+                    a.n. Dwi Widianingtias
+                </p>
             `;
+
             break;
+
+
+        /* DEFAULT */
 
         default:
 
@@ -1119,88 +1281,174 @@ function showPaymentInfo() {
 
 function kirimWhatsApp() {
 
-    const nama = document.getElementById("nama").value.trim();
 
-    const wa = document.getElementById("wa").value.trim();
+    const nama =
+        document.getElementById("nama")
+        .value
+        .trim();
 
-    const alamat = document.getElementById("alamat").value.trim();
 
-    const pedas = document.getElementById("pedas").value;
+    const wa =
+        document.getElementById("wa")
+        .value
+        .trim();
 
-    const catatan = document.getElementById("catatan").value;
+
+    const alamat =
+        document.getElementById("alamat")
+        .value
+        .trim();
+
+
+    const pedas =
+        document.getElementById("pedas")
+        .value;
+
+
+    const catatan =
+        document.getElementById("catatan")
+        .value
+        .trim();
+
+
+    const deliveryElement =
+        document.getElementById("deliveryMethod");
+
+
+    const paymentElement =
+        document.getElementById("payment");
+
+
+    /* ======================================
+       METODE PENGIRIMAN
+    ====================================== */
 
     const metodePengiriman =
-        document.getElementById("deliveryMethod")
-        .options[
-        document.getElementById("deliveryMethod").selectedIndex
-        ].text;
+        deliveryElement
+            .options[
+                deliveryElement.selectedIndex
+            ]
+            .text;
+
+
+    /* ======================================
+       METODE PEMBAYARAN
+    ====================================== */
 
     const metodePembayaran =
-        document.getElementById("payment")
-        .options[
-        document.getElementById("payment").selectedIndex
-        ].text;
+        paymentElement
+            .options[
+                paymentElement.selectedIndex
+            ]
+            .text;
+
+
+    /* ======================================
+       VALIDASI DATA
+    ====================================== */
 
     if (
         nama === "" ||
         wa === "" ||
         alamat === "" ||
-        document.getElementById("payment").value === ""
+        paymentElement.value === ""
     ) {
 
-        alert("Silakan lengkapi data.");
+        alert(
+            "Silakan lengkapi data pemesanan."
+        );
 
         return;
 
     }
+
+
+    /* ======================================
+       DAFTAR MENU
+    ====================================== */
 
     let daftarMenu = "";
 
     let adaPesanan = false;
 
-    document.querySelectorAll(".menu-item").forEach(function (item) {
 
-        const qty = parseInt(item.querySelector(".qty").value);
+    document.querySelectorAll(".menu-item")
+        .forEach(function (item) {
 
-        if (qty > 0) {
 
-            adaPesanan = true;
+            const qty =
+                parseInt(
+                    item.querySelector(".qty").value
+                ) || 0;
 
-            const harga = parseInt(item.dataset.price);
 
-            daftarMenu +=
-                "• " +
-                item.dataset.name +
-                " x" +
-                qty +
-                " = Rp" +
-                (harga * qty).toLocaleString("id-ID") +
-                "\n";
+            if (qty > 0) {
 
-        }
+                adaPesanan = true;
 
-    });
+
+                const harga =
+                    parseInt(
+                        item.dataset.price
+                    ) || 0;
+
+
+                daftarMenu +=
+                    "• " +
+                    item.dataset.name +
+                    " x" +
+                    qty +
+                    " = Rp" +
+                    (harga * qty)
+                        .toLocaleString("id-ID") +
+                    "\n";
+
+            }
+
+        });
+
+
+    /* ======================================
+       VALIDASI MENU
+    ====================================== */
 
     if (!adaPesanan) {
 
-        alert("Silakan pilih menu.");
+        alert(
+            "Silakan pilih menu terlebih dahulu."
+        );
 
         return;
 
     }
 
+
+    /* ======================================
+       TOTAL
+    ====================================== */
+
     const subtotal =
-        document.getElementById("subtotal").textContent;
+        document.getElementById("subtotal")
+        .textContent;
+
 
     const ongkir =
-        document.getElementById("ongkir").textContent;
+        document.getElementById("ongkir")
+        .textContent;
+
 
     const total =
-        document.getElementById("total").textContent;
+        document.getElementById("total")
+        .textContent;
+
+
+    /* ======================================
+       PESAN WHATSAPP
+    ====================================== */
 
     const pesan =
 
-` *PESANAN BARU*
+`*PESANAN BARU*
 
 Nama:
 ${nama}
@@ -1213,11 +1461,10 @@ ${alamat}
 
 Pesanan:
 ${daftarMenu}
-
 Pengiriman:
 ${metodePengiriman}
 
-Pedas:
+Tingkat Kepedasan:
 ${pedas}
 
 Subtotal:
@@ -1226,25 +1473,41 @@ ${subtotal}
 Ongkir:
 ${ongkir}
 
-Total:
-${total}
+*TOTAL:
+${total}*
 
-Pembayaran
+Pembayaran:
 ${metodePembayaran}
 
 Catatan:
-${catatan}
+${catatan || "-"}
 
-Terima kasih 
-TAHU GEJROT PAKDE BURUNG`;
+Terima kasih 🙏
 
-    const nomorAdmin = "6285774537978";
+*TAHU GEJROT PAKDE BURUNG*`;
 
-    window.open(
+
+    /* ======================================
+       NOMOR WHATSAPP ADMIN
+    ====================================== */
+
+    const nomorAdmin =
+        "6285774537978";
+
+
+    /* ======================================
+       BUKA WHATSAPP
+    ====================================== */
+
+    const url =
         "https://wa.me/" +
         nomorAdmin +
         "?text=" +
-        encodeURIComponent(pesan),
+        encodeURIComponent(pesan);
+
+
+    window.open(
+        url,
         "_blank"
     );
 
