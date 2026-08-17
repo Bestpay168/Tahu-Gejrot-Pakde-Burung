@@ -1513,4 +1513,4 @@ Terima kasih 🙏
 
 }
 
-alert("script.js berjalan");
+alert("SCRIPT.JS BERJALAN");
