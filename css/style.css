@@ -251,8 +251,13 @@ z-index:1002;
     }
 
     .burger{
-        display:block;
-        z-index:999;
+        display:flex;
+        z-index:1002;
+        width:45px;
+        height:45px;
+
+        justify-content:center;
+        align-items:center;
     }
 
     .navbar{
@@ -276,7 +281,8 @@ z-index:1002;
 
 
 .lang-menu{
-    width:50%;
+    display:none;
+position:absolute;
     margin-top:25px;
     padding-top:20px;
     border-top:1px solid rgba(255,255,255,.2);
@@ -289,27 +295,43 @@ z-index:1002;
     padding-left:20px;
 }
 
-.langBtn{
-    
-    margin:8px auto;
-    display:flex;
+    .lang-menu button{
 
-    padding:12px;
+        display:block;
 
-    border:none;
-    border-radius:10px;
+        width:100%;
 
-    background:#333;
-    color:#fff;
+        min-height:48px;
 
-    cursor:pointer;
-    transition:.3s;
-}
+        margin:0;
 
-.lang-menu button:hover{
-    background:#ff9800;
-}
+        padding:10px 14px;
 
+        box-sizing:border-box;
+
+        border:none;
+
+        border-radius:8px;
+
+        background:transparent;
+
+        color:#fff;
+
+        text-align:left;
+
+        font-size:15px;
+
+        cursor:pointer;
+
+        transition:.3s;
+    }
+
+
+    .lang-menu button:hover{
+
+        background:#ff9800;
+
+    }
 .arabic-text{
     direction: rtl;
     text-align: right;
