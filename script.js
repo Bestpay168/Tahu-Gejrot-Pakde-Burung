@@ -737,7 +737,7 @@ lightbox.classList.remove("show");
 
 });
 
-});
+}
 
 
 
