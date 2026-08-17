@@ -720,9 +720,10 @@ document.getElementById("pickupMethodLabel").textContent =lang[language].pickupM
 document.getElementById("paymentOption").textContent =lang[language].paymentOption;
 
 
-if (document.getElementById("cart").textContent.trim() === "Keranjang masih kosong.") {
-    document.getElementById("cartEmpty").textContent = lang[language].cartEmpty;
+const cartEmpty = document.getElementById("cartEmpty");
 
+if (cartEmpty) {
+    cartEmpty.textContent = lang[language].cartEmpty;
 
 const currentLang = document.getElementById("currentLang");
 
