@@ -726,10 +726,15 @@ if (cartEmpty) {
     cartEmpty.textContent = lang[language].cartEmpty;
 }
 const currentLang = document.getElementById("currentLang");
+const currentFlag =
+document.querySelector(".lang-btn .flag");
 
     if (currentLang && langInfo[language]) {
-        currentLang.textContent = langInfo[language].code;
-    
+        currentLang.textContent = langInfo[language].code;    
+}
+if (currentFlag && langInfo[language]) {
+        currentflag.textContent = langInfo[language].flag;   
+ 
 }
 
 }
