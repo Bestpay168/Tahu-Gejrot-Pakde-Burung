@@ -732,5 +732,10 @@ const currentLang = document.getElementById("currentLang");
 if (currentLang && langInfo[language]) {
     currentLang.textContent = langInfo[language].code;
 
+const currenyFlag = document.getElementById("currentFlag");
+
+if (currentFlag && langInfo[language]) {
+    currentLang.textContent = langInfo[language].flag;
+
 }
 }
