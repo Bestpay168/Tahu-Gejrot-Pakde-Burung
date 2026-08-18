@@ -719,8 +719,6 @@ document.getElementById("pickupMethodLabel").textContent =lang[language].pickupM
 
 document.getElementById("paymentOption").textContent =lang[language].paymentOption;
 
-
-}
 const cartEmpty = document.getElementById("cartEmpty");
 
 if (cartEmpty) {
@@ -731,7 +729,7 @@ const currentLang = document.getElementById("currentLang");
 
 if (currentLang && langInfo[language]) {
     currentLang.textContent = langInfo[language].code;
-
+}
 const currenyFlag = document.getElementById("currentFlag");
 
 if (currentFlag && langInfo[language]) {
