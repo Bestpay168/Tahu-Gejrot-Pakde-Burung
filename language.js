@@ -806,6 +806,11 @@ document.getElementById("tahuExtraPedas").textContent =lang[language].tahuExtraP
 
 document.getElementById("cartEmpty").textContent =lang[language].cartEmpty;
 
+const cartEmpty = document.getElementById("cartEmpty");
+
+if (cartEmpty) {
+    cartEmpty.textContent = lang[language].cartEmpty;
+
 }
 
 const currentLang = document.getElementById("currentLang");
