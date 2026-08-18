@@ -64,7 +64,7 @@ const flags = {
     zh: "🇨🇳",
     ja: "🇯🇵",
     ko: "🇰🇷",
-    ar: "🇸🇦"
+    ar: "🇸🇦",
 };
 
 const codes = {
@@ -73,7 +73,7 @@ const codes = {
     zh: "ZH",
     ja: "JA",
     ko: "KO",
-    ar: "AR"
+    ar: "AR",
 };
 
 document.querySelectorAll("[data-lang]").forEach(button => {
