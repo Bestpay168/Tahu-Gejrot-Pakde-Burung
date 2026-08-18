@@ -183,6 +183,8 @@ spicyNone:"Tidak Pedas",
 spicyMedium:"Sedang",
 spicyHot:"Pedas",
 spicyExtra:"Extra Pedas",
+
+esTehManis:"Es Teh Manis",
 },
 
 en:{
@@ -274,6 +276,8 @@ spicyMedium:"Medium",
 spicyHot:"Spicy",
 spicyExtra:"Extra Spicy",
 
+
+esTehManis:"Sweet Iced Tea",
 },
 
 zh:{
@@ -364,6 +368,8 @@ spicyNone:"不辣",
 spicyMedium:"中辣",
 spicyHot:"辣",
 spicyExtra:"特辣",
+
+esTehManis:"甜冰茶",
 
 },
 
@@ -458,6 +464,8 @@ spicyMedium:"中辛",
 spicyHot:"辛い",
 spicyExtra:"激辛",
 
+
+esTehManis:"甘いアイスティー",
 },
 
 ko:{
@@ -550,6 +558,8 @@ spicyNone:"맵지 않음",
 spicyMedium:"보통 매운맛",
 spicyHot:"매운맛",
 spicyExtra:"아주 매운맛",
+
+esTehManis:"달콤한 아이스티",
 },
 
 ar:{
@@ -648,6 +658,7 @@ spicyMedium:"متوسط",
 spicyHot:"حار",
 spicyExtra:"حار جدًا",
 
+esTehManis:"شاي مثلج حلو",
 }
 
 };
@@ -768,7 +779,7 @@ document.getElementById("spicyHot").textContent =lang[language].spicyHot;
 
 
 document.getElementById("spicyExtra").textContent =lang[language].spicyExtra;
-
+document.getElementById("esTehManis").textContent =lang[language].esTehManis;
 const cartEmpty = document.getElementById("cartEmpty");
 
 if (cartEmpty) {
