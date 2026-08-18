@@ -437,7 +437,7 @@ pickupMethodLabel:"受け取り方法",
 
   paymentOption:"-- お支払い方法を選択してください --",
 
-orderButton: "📲 WhatsAppで注文",
+orderButton:"📲 WhatsAppで注文",
 
 },
 
@@ -525,7 +525,7 @@ cartTotal:"합계",
 
 paymentOption:"-- 결제 방법을 선택하세요 --",
 
-orderButton: "📲 WhatsApp으로 주문",
+orderButton:"📲 WhatsApp으로 주문",
 },
 
 ar:{
