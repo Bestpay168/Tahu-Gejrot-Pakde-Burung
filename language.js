@@ -722,11 +722,6 @@ document.getElementById("pickupMethodLabel").textContent =lang[language].pickupM
 document.getElementById("paymentOption").textContent =lang[language].paymentOption;
 
 
-const cartEmpty = document.getElementById("cartEmpty");
-
-if (cartEmpty) {
-    cartEmpty.textContent = lang[language].cartEmpty;
-
 }
 const cartEmpty = document.getElementById("cartEmpty");
 
