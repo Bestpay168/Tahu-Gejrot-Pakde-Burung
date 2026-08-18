@@ -337,7 +337,7 @@ mapsSub:"找到我们",
 mapsDesc:"欢迎到 Pakde Burung 印尼特色豆腐，或通过 WhatsApp 下单。",
 
 cartTitle:"🛒 购物车",
-cartEmpty:"购物车还是空的。",
+cartEmpty:"购物车还是空的",
 cartSubtotal:"小计",
 shipping:"配送费",
 cartTotal:"总计",
@@ -724,13 +724,12 @@ const cartEmpty = document.getElementById("cartEmpty");
 
 if (cartEmpty) {
     cartEmpty.textContent = lang[language].cartEmpty;
-
+}
 const currentLang = document.getElementById("currentLang");
 
     if (currentLang && langInfo[language]) {
         currentLang.textContent = langInfo[language].code;
-    }
-
+    
 }
 
 }
