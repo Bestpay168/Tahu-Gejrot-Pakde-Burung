@@ -804,10 +804,8 @@ document.getElementById("esTehManis").textContent =lang[language].esTehManis;
 document.getElementById("tahuOriginal").textContent =lang[language].tahuOriginal;
 document.getElementById("tahuExtraPedas").textContent =lang[language].tahuExtraPedas;
 
-const cartEmpty = document.getElementById("cartEmpty");
+document.getElementById("cartEmpty").textContent =lang[language].cartEmpty;
 
-if (cartEmpty) {
-    cartEmpty.textContent = lang[language].cartEmpty;
 }
 
 const currentLang = document.getElementById("currentLang");
