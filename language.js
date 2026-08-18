@@ -177,6 +177,7 @@ pickupMethodLabel:"Metode Pengambilan",
 
 paymentOption:"-- Pilih Metode Pembayaran --",
 
+orderButton:"📲 Pesan via WhatsApp",
 },
 
 en:{
@@ -260,6 +261,8 @@ cartTotal:"Total",
  pickupMethodLabel:"Pickup Method",
 
   paymentOption:"-- Select Payment Method --",
+
+orderButton:"📲 Order via WhatsApp",
 
 },
 
@@ -346,6 +349,7 @@ pickupMethodLabel:"取货方式",
 
 paymentOption:"-- 请选择付款方式 --",
 
+orderButton:"📲 通过 WhatsApp 下单",
 
 },
 
@@ -433,6 +437,7 @@ pickupMethodLabel:"受け取り方法",
 
   paymentOption:"-- お支払い方法を選択してください --",
 
+orderButton: "📲 WhatsAppで注文",
 
 },
 
@@ -520,6 +525,7 @@ cartTotal:"합계",
 
 paymentOption:"-- 결제 방법을 선택하세요 --",
 
+orderButton: "📲 WhatsApp으로 주문",
 },
 
 ar:{
@@ -609,6 +615,10 @@ cartTotal:"الإجمالي",
 pickupMethodLabel:"طريقة الاستلام",
 
 paymentOption:"-- اختر طريقة الدفع --",
+
+:
+
+orderButton:"📲 اطلب عبر واتساب",
 
 }
 
@@ -718,6 +728,9 @@ document.getElementById("cartTotal").textContent = lang[language].cartTotal;
 document.getElementById("pickupMethodLabel").textContent =lang[language].pickupMethodLabel;
 
 document.getElementById("paymentOption").textContent =lang[language].paymentOption;
+
+
+document.getElementById("orderButton").textContent =lang[language].orderButton;
 
 const cartEmpty = document.getElementById("cartEmpty");
 
