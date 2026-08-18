@@ -58,39 +58,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const langInfo = {
-
-    id: {
-        code: "ID",
-        flag: "🇮🇩"
-    },
-
-    en: {
-        code: "EN",
-        flag: "🇺🇸"
-    },
-
-    zh: {
-        code: "ZH",
-        flag: "🇨🇳"
-    },
-
-    ja: {
-        code: "JA",
-        flag: "🇯🇵"
-    },
-
-    ko: {
-        code: "KO",
-        flag: "🇰🇷"
-    },
-
-    ar: {
-        code: "AR",
-        flag: "🇸🇦"
-    }
-
+const flags = {
+    id: "🇮🇩",
+    en: "🇺🇸",
+    zh: "🇨🇳",
+    ja: "🇯🇵",
+    ko: "🇰🇷",
+    ar: "🇸🇦"
 };
+
+const codes = {
+    id: "ID",
+    en: "EN",
+    zh: "ZH",
+    ja: "JA",
+    ko: "KO",
+    ar: "AR"
+};
+
+document.querySelectorAll("[data-lang]").forEach(button => {
+
+    button.onclick = function () {
+
+        const lang = this.dataset.lang;
+
+        document.getElementById("flag").textContent = flags[lang];
+
+        document.getElementById("currentLang").textContent = codes[lang];
+
+        setLang(lang);
+
+    };
+
+});
 
 const lang={
 
@@ -724,17 +724,8 @@ const cartEmpty = document.getElementById("cartEmpty");
 
 if (cartEmpty) {
     cartEmpty.textContent = lang[language].cartEmpty;
-}
-const currentLang = document.getElementById("currentLang");
-const currentFlag =
-document.querySelector(".lang-btn .flag");
 
-    if (currentLang && langInfo[language]) {
-        currentLang.textContent = langInfo[language].code;    
 }
-if (currentFlag && langInfo[language]) {
-        currentflag.textContent = langInfo[language].flag;   
- 
-}
+
 
 }
