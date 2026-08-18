@@ -185,6 +185,9 @@ spicyHot:"Pedas",
 spicyExtra:"Extra Pedas",
 
 esTehManis:"Es Teh Manis",
+
+tahuOriginal:"Tahu Gejrot Original",
+tahuExtraPedas:"Tahu Gejrot Extra Pedas",
 },
 
 en:{
@@ -278,6 +281,9 @@ spicyExtra:"Extra Spicy",
 
 
 esTehManis:"Sweet Iced Tea",
+
+tahuOriginal:"Original Tahu Gejrot",
+tahuExtraPedas:"Extra Spicy Tahu Gejrot",
 },
 
 zh:{
@@ -370,6 +376,9 @@ spicyHot:"辣",
 spicyExtra:"特辣",
 
 esTehManis:"甜冰茶",
+
+tahuOriginal:"原味豆腐",
+tahuExtraPedas:"特辣豆腐",
 
 },
 
@@ -466,6 +475,11 @@ spicyExtra:"激辛",
 
 
 esTehManis:"甘いアイスティー",
+
+tahuOriginal:"オリジナル・タフゲジョット",
+tahuExtraPedas:"激辛タフゲジョット",
+
+
 },
 
 ko:{
@@ -560,6 +574,9 @@ spicyHot:"매운맛",
 spicyExtra:"아주 매운맛",
 
 esTehManis:"달콤한 아이스티",
+
+tahuOriginal:"오리지널 타후 게조트",
+tahuExtraPedas:"아주 매운 타후 게조트",
 },
 
 ar:{
@@ -659,6 +676,9 @@ spicyHot:"حار",
 spicyExtra:"حار جدًا",
 
 esTehManis:"شاي مثلج حلو",
+
+tahuOriginal:"تاهو غيجروت الأصلي",
+tahuExtraPedas:"تاهو غيجروت حار جدًا",
 }
 
 };
@@ -780,6 +800,10 @@ document.getElementById("spicyHot").textContent =lang[language].spicyHot;
 
 document.getElementById("spicyExtra").textContent =lang[language].spicyExtra;
 document.getElementById("esTehManis").textContent =lang[language].esTehManis;
+
+document.getElementById("tahuOriginal").textContent =lang[language].tahuOriginal;
+document.getElementById("tahuExtraPedas").textContent =lang[language].tahuExtraPedas;
+
 const cartEmpty = document.getElementById("cartEmpty");
 
 if (cartEmpty) {
