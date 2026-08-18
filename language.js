@@ -61,32 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
 const langInfo = {
 
     id: {
-        code: "ID",
+        code: "🇮🇩ID",
         flag: "🇮🇩"
     },
 
     en: {
-        code: "EN",
+        code: "🇺🇸EN",
         flag: "🇺🇸"
     },
 
     zh: {
-        code: "ZH",
+        code: ""🇨🇳ZH",
         flag: "🇨🇳"
     },
 
     ja: {
-        code: "JA",
+        code: "🇯🇵JA",
         flag: "🇯🇵"
     },
 
     ko: {
-        code: "KO",
+        code: "🇰🇷KO",
         flag: "🇰🇷"
     },
 
     ar: {
-        code: "AR",
+        code: "🇸🇦AR",
         flag: "🇸🇦"
     }
 
