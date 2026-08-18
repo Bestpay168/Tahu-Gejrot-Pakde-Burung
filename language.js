@@ -58,23 +58,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const flags = {
-    id: "🇮🇩",
-    en: "🇺🇸",
-    zh: "🇨🇳",
-    ja: "🇯🇵",
-    ko: "🇰🇷",
-    ar: "🇸🇦",
+const langInfo = {
+
+    id: {
+        code: "ID",
+        flag: "🇮🇩"
+    },
+
+    en: {
+        code: "EN",
+        flag: "🇺🇸"
+    },
+
+    zh: {
+        code: "ZH",
+        flag: "🇨🇳"
+    },
+
+    ja: {
+        code: "JA",
+        flag: "🇯🇵"
+    },
+
+    ko: {
+        code: "KO",
+        flag: "🇰🇷"
+    },
+
+    ar: {
+        code: "AR",
+        flag: "🇸🇦"
+    }
+
 };
 
-const codes = {
-    id: "ID",
-    en: "EN",
-    zh: "ZH",
-    ja: "JA",
-    ko: "KO",
-    ar: "AR",
-};
 
 
 const lang={
@@ -711,5 +728,15 @@ if (cartEmpty) {
     cartEmpty.textContent = lang[language].cartEmpty;
 
 }
+const cartEmpty = document.getElementById("cartEmpty");
 
+if (cartEmpty) {
+    cartEmpty.textContent = lang[language].cartEmpty;
+}
+
+const currentLang = document.getElementById("currentLang");
+
+if (currentLang && langInfo[language]) {
+    currentLang.textContent = langInfo[language].code;
+}
 }
