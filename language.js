@@ -178,6 +178,11 @@ pickupMethodLabel:"Metode Pengambilan",
 paymentOption:"-- Pilih Metode Pembayaran --",
 
 orderButton:"📲 Pesan via WhatsApp",
+
+spicyNone:"Tidak Pedas",
+    spicyMedium:"Sedang",
+    spicyHot:"Pedas",
+    spicyExtra:"Extra Pedas",
 },
 
 en:{
@@ -263,6 +268,11 @@ cartTotal:"Total",
   paymentOption:"-- Select Payment Method --",
 
 orderButton:"📲 Order via WhatsApp",
+
+spicyNone:"Not Spicy",
+    spicyMedium:"Medium",
+    spicyHot:"Spicy",
+    spicyExtra:"Extra Spicy",
 
 },
 
@@ -350,6 +360,10 @@ pickupMethodLabel:"取货方式",
 paymentOption:"-- 请选择付款方式 --",
 
 orderButton:"📲 通过 WhatsApp 下单",
+spicyNone:"不辣",
+    spicyMedium:"中辣",
+    spicyHot:"辣",
+    spicyExtra:"特辣",
 
 },
 
@@ -439,6 +453,11 @@ pickupMethodLabel:"受け取り方法",
 
 orderButton:"📲 WhatsAppで注文",
 
+spicyNone:"辛くない",
+    spicyMedium:"中辛",
+    spicyHot:"辛い",
+    spicyExtra:"激辛",
+
 },
 
 ko:{
@@ -526,6 +545,11 @@ cartTotal:"합계",
 paymentOption:"-- 결제 방법을 선택하세요 --",
 
 orderButton:"📲 WhatsApp으로 주문",
+
+spicyNone:"맵지 않음",
+    spicyMedium:"보통 매운맛",
+    spicyHot:"매운맛",
+    spicyExtra:"아주 매운맛",
 },
 
 ar:{
@@ -618,6 +642,11 @@ paymentOption:"-- اختر طريقة الدفع --",
 
 
 orderButton:"📲 اطلب عبر واتساب",
+
+spicyNone:"غير حار",
+    spicyMedium:"متوسط",
+    spicyHot:"حار",
+    spicyExtra:"حار جدًا",
 
 }
 
@@ -730,6 +759,15 @@ document.getElementById("paymentOption").textContent =lang[language].paymentOpti
 
 
 document.getElementById("orderButton").textContent =lang[language].orderButton;
+
+document.getElementById("spicyNone").textContent = lang[language].spicyNone;
+
+document.getElementById("spicyMedium").textContent =lang[language].spicyMedium;
+
+document.getElementById("spicyHot").textContent =lang[language].spicyHot;
+
+
+document.getElementById("spicyExtra").textContent =lang[language].spicyExtra;
 
 const cartEmpty = document.getElementById("cartEmpty");
 
