@@ -76,21 +76,6 @@ const codes = {
     ar: "AR",
 };
 
-document.querySelectorAll("[data-lang]").forEach(button => {
-
-    button.onclick = function () {
-
-        const lang = this.dataset.lang;
-
-        document.getElementById("flag").textContent = flags[lang];
-
-        document.getElementById("currentLang").textContent = codes[lang];
-
-        setLang(lang);
-
-    };
-
-});
 
 const lang={
 
@@ -726,6 +711,5 @@ if (cartEmpty) {
     cartEmpty.textContent = lang[language].cartEmpty;
 
 }
-
 
 }
