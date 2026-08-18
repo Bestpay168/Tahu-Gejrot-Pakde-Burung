@@ -616,7 +616,6 @@ pickupMethodLabel:"طريقة الاستلام",
 
 paymentOption:"-- اختر طريقة الدفع --",
 
-:
 
 orderButton:"📲 اطلب عبر واتساب",
 
