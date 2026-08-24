@@ -188,6 +188,8 @@ esTehManis:"Es Teh Manis",
 
 tahuOriginal:"Tahu Gejrot Original",
 tahuExtraPedas:"Tahu Gejrot Extra Pedas",
+footerTitle:"TAHU GEJROT PAKDE BURUNG",
+footerDesc:"Pedas, Segar, dan Bikin Nagih",
 },
 
 en:{
@@ -284,6 +286,9 @@ esTehManis:"Sweet Iced Tea",
 
 tahuOriginal:"Original Tahu Gejrot",
 tahuExtraPedas:"Extra Spicy Tahu Gejrot",
+footerTitle:"PAKDE BURUNG TOFU GEJROT"
+footerDesc:"Spicy, Fresh, and Delicious",
+
 },
 
 zh:{
@@ -379,8 +384,8 @@ esTehManis:"甜冰茶",
 
 tahuOriginal:"原味豆腐",
 tahuExtraPedas:"特辣豆腐",
-
-},
+footerTitle:"Pakde Burung 印尼特色豆腐",
+footerDesc:"香辣、新鲜、美味",
 
 ja:{
     navHome:"ホーム",
