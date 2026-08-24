@@ -483,7 +483,8 @@ esTehManis:"甘いアイスティー",
 
 tahuOriginal:"オリジナル・タフゲジョット",
 tahuExtraPedas:"激辛タフゲジョット",
-
+footerTitle:"パクデ・ブルン 豆腐ゲジョロット",
+footerDesc:"辛くて新鮮、とても美味しい",
 
 },
 
@@ -582,7 +583,9 @@ esTehManis:"달콤한 아이스티",
 
 tahuOriginal:"오리지널 타후 게조트",
 tahuExtraPedas:"아주 매운 타후 게조트",
-},
+footerTitle:"박데 부룽 타후 게조롯",
+footerDesc:"매콤하고 신선하며 맛있습니다",
+),
 
 ar:{
     navHome:"الرئيسية",
@@ -684,6 +687,8 @@ esTehManis:"شاي مثلج حلو",
 
 tahuOriginal:"تاهو غيجروت الأصلي",
 tahuExtraPedas:"تاهو غيجروت حار جدًا",
+footerTitle:"تاهو جيجروت باكدي بورونغ",
+footerDesc:"حار • طازج • لذيذ للغاية",
 }
 
 };
@@ -808,6 +813,9 @@ document.getElementById("esTehManis").textContent =lang[language].esTehManis;
 
 document.getElementById("tahuOriginal").textContent =lang[language].tahuOriginal;
 document.getElementById("tahuExtraPedas").textContent =lang[language].tahuExtraPedas;
+
+document.getElementById("footerTitle").textContent =lang[language].footerTitle;
+document.getElementById("footerDesc").textContent =lang[language].footerDesc;
 
 
 const cartEmpty =
