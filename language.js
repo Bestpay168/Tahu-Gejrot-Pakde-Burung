@@ -190,6 +190,8 @@ tahuOriginal:"Tahu Gejrot Original",
 tahuExtraPedas:"Tahu Gejrot Extra Pedas",
 footerTitle:"TAHU GEJROT PAKDE BURUNG",
 footerDesc:"Pedas, Segar, dan Bikin Nagih",
+nomor:"Kontak",
+live:"Alamat",
 },
 
 en:{
@@ -289,6 +291,8 @@ tahuExtraPedas:"Extra Spicy Tahu Gejrot",
 footerTitle:"PAKDE BURUNG TOFU GEJROT",
 footerDesc:"Spicy, Fresh, and Delicious",
 
+nomor:"Contact",
+live:"Address",
 },
 
 zh:{
@@ -386,6 +390,9 @@ tahuOriginal:"原味豆腐",
 tahuExtraPedas:"特辣豆腐",
 footerTitle:"Pakde Burung 印尼特色豆腐",
 footerDesc:"香辣、新鲜、美味",
+
+nomor:"联系方式",
+live:"地址",
 },
 
 ja:{
@@ -486,6 +493,8 @@ tahuOriginal:"オリジナル・タフゲジョット",
 tahuExtraPedas:"激辛タフゲジョット",
 footerTitle:"パクデ・ブルン 豆腐ゲジョロット",
 footerDesc:"辛くて新鮮、とても美味しい",
+nomor:"お問い合わせ",
+live:"住所",
 
 },
 
@@ -586,6 +595,9 @@ tahuOriginal:"오리지널 타후 게조트",
 tahuExtraPedas:"아주 매운 타후 게조트",
 footerTitle:"박데 부룽 타후 게조롯",
 footerDesc:"매콤하고 신선하며 맛있습니다",
+nomor:"연락처",
+live:"주소",
+
 },
 
 ar:{
@@ -690,6 +702,9 @@ tahuOriginal:"تاهو غيجروت الأصلي",
 tahuExtraPedas:"تاهو غيجروت حار جدًا",
 footerTitle:"تاهو جيجروت باكدي بورونغ",
 footerDesc:"حار • طازج • لذيذ للغاية",
+
+nomor:"اتصل بنا",
+Live:"العنوان",
 }
 
 };
@@ -817,6 +832,9 @@ document.getElementById("tahuExtraPedas").textContent =lang[language].tahuExtraP
 
 document.getElementById("footerTitle").textContent =lang[language].footerTitle;
 document.getElementById("footerDesc").textContent =lang[language].footerDesc;
+
+document.getElementById("nomor").textContent =lang[language].nomor;
+document.getElementById("Live").textContent =lang[language].Live;
 
 
 const cartEmpty =
