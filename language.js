@@ -191,7 +191,7 @@ tahuExtraPedas:"Tahu Gejrot Extra Pedas",
 footerTitle:"TAHU GEJROT PAKDE BURUNG",
 footerDesc:"Pedas, Segar, dan Bikin Nagih",
 nomor:"Kontak",
-live:"Alamat",
+Live:"Alamat",
 },
 
 en:{
@@ -292,7 +292,7 @@ footerTitle:"PAKDE BURUNG TOFU GEJROT",
 footerDesc:"Spicy, Fresh, and Delicious",
 
 nomor:"Contact",
-live:"Address",
+Live:"Address",
 },
 
 zh:{
@@ -392,7 +392,7 @@ footerTitle:"Pakde Burung 印尼特色豆腐",
 footerDesc:"香辣、新鲜、美味",
 
 nomor:"联系方式",
-live:"地址",
+Live:"地址",
 },
 
 ja:{
@@ -494,7 +494,7 @@ tahuExtraPedas:"激辛タフゲジョット",
 footerTitle:"パクデ・ブルン 豆腐ゲジョロット",
 footerDesc:"辛くて新鮮、とても美味しい",
 nomor:"お問い合わせ",
-live:"住所",
+Live:"住所",
 
 },
 
@@ -596,7 +596,7 @@ tahuExtraPedas:"아주 매운 타후 게조트",
 footerTitle:"박데 부룽 타후 게조롯",
 footerDesc:"매콤하고 신선하며 맛있습니다",
 nomor:"연락처",
-live:"주소",
+Live:"주소",
 
 },
 
